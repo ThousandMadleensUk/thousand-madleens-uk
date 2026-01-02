@@ -14,9 +14,13 @@ import {
   ExternalLink,
 } from "lucide-react";
 import Link from "next/link";
-import content from "../content.json";
+import defaultContent from "../content.json";
 
-export default function PressRelease() {
+interface PressReleaseProps {
+  content?: any;
+}
+
+export default function PressRelease({ content = defaultContent }: PressReleaseProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const { pressRelease } = content;
 
@@ -113,32 +117,21 @@ export default function PressRelease() {
                   className="overflow-hidden"
                 >
                   <div className="pt-3 space-y-4 border-t border-gray-200">
-                    {/* Display structured sections if available, otherwise fallback to fullContent */}
-                    {pressRelease.announcement.sections
-                      ? pressRelease.announcement.sections.map(
-                          (section, index) => (
-                            <div key={index} className="space-y-2">
-                              {section.title && (
-                                <h5 className="text-base font-bold text-gray-900">
-                                  {section.title}
-                                </h5>
-                              )}
-                              <p className="text-sm text-gray-700 leading-relaxed">
-                                {section.content}
-                              </p>
-                            </div>
-                          )
-                        )
-                      : pressRelease.announcement.fullContent.map(
-                          (paragraph, index) => (
-                            <p
-                              key={index}
-                              className="text-sm text-gray-700 leading-relaxed"
-                            >
-                              {paragraph}
-                            </p>
-                          )
-                        )}
+                    {/* Display structured sections */}
+                    {pressRelease.announcement.sections.map(
+                      (section, index) => (
+                        <div key={index} className="space-y-2">
+                          {section.title && (
+                            <h5 className="text-base font-bold text-gray-900">
+                              {section.title}
+                            </h5>
+                          )}
+                          <p className="text-sm text-gray-700 leading-relaxed">
+                            {section.content}
+                          </p>
+                        </div>
+                      )
+                    )}
 
                     <div className="mt-4 p-3 bg-gray-50 rounded-lg">
                       <p className="text-sm text-gray-800 font-medium">

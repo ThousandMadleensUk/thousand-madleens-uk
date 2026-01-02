@@ -9,6 +9,9 @@ local_backend: true
 media_folder: "public/images"
 public_folder: "/images"
 
+# Enable preview - load actual site in iframe
+show_preview_links: true
+
 collections:
   - name: "config"
     label: "Site Configuration"
@@ -35,7 +38,7 @@ collections:
                 name: "logo"
                 widget: "object"
                 fields:
-                  - { label: "Logo Path", name: "src", widget: "string" }
+                  - { label: "Logo Image", name: "src", widget: "image" }
                   - { label: "Logo Alt Text", name: "alt", widget: "string" }
               - label: "Menu Items"
                 name: "menuItems"
@@ -61,7 +64,7 @@ collections:
                 name: "backgroundImage"
                 widget: "object"
                 fields:
-                  - { label: "Image Path", name: "src", widget: "image" }
+                  - { label: "Image", name: "src", widget: "image" }
                   - { label: "Alt Text", name: "alt", widget: "string" }
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Subtitle", name: "subtitle", widget: "string" }
@@ -128,10 +131,6 @@ collections:
                     fields:
                       - { label: "Section Title", name: "title", widget: "string", required: false }
                       - { label: "Content", name: "content", widget: "text" }
-                  - label: "Full Content (Paragraphs)"
-                    name: "fullContent"
-                    widget: "list"
-                    field: { label: "Paragraph", name: "paragraph", widget: "text" }
                   - label: "Media Contacts"
                     name: "mediaContacts"
                     widget: "list"
@@ -230,7 +229,7 @@ collections:
                 name: "logo"
                 widget: "object"
                 fields:
-                  - { label: "Logo Path", name: "src", widget: "string" }
+                  - { label: "Logo Image", name: "src", widget: "image" }
                   - { label: "Alt Text", name: "alt", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
               - label: "Footer Sections"

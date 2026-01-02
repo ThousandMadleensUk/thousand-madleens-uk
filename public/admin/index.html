@@ -5,9 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Manager - Thousand Madleens to Gaza</title>
     <base href="/admin/" />
+    <!-- Tailwind CSS for preview styling -->
+    <script src="https://cdn.tailwindcss.com"></script>Why
   </head>
   <body>
-    <!-- Include the script that builds the page and powers Decap CMS -->
+    <!-- Include Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+    <!-- Load preview template after CMS is ready -->
+    <script>
+      window.addEventListener('load', function() {
+        const script = document.createElement('script');
+        script.src = '/admin/preview.jsx';
+        document.body.appendChild(script);
+      });
+    </script>
   </body>
 </html>

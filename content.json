@@ -26,14 +26,6 @@
     "date": "September 16, 2025",
     "announcement": {
       "launchDate": "September 24th, 2025",
-      "fullContent": [
-        "The Freedom Flotilla Coalition (FFC) and Thousand Madleens to Gaza (TMTG) are joining forces as one flotilla to challenge Israel's illegal and deadly siege of Gaza. This alliance unites two global, people-led initiatives in a shared commitment to justice and solidarity with the Palestinian people.",
-        "On September 24th, 2025, we will launch the next wave of civilian ships to Gaza from Catania following the first boats of the Global Sumud Flotilla now en route to Palestine's shores. It continues a legacy of resistance that began with the Free Gaza Movement in 2008 and FFC's missions since 2010. We sail because world powers enable Israel's illegal siege. We sail to break it, to defy complicity, and to affirm the rights of Palestinians in Gaza.",
-        "This partnership is rooted in years of experience and grassroots organizing. By consolidating maritime safety, legal defence, and communications, we strengthen coordination, safety, messaging, and global impact to confront what governments, corporations and institutions have abandoned—to stop genocide, resist apartheid and demand accountability under international law. We sail because silence is betrayal. We sail because Gaza must live. We sail because Palestine must be free!",
-        "Israel's illegal siege of Gaza is both a humanitarian emergency and a political crime. Gaza is being annihilated, and her people deliberately starved, bombed, and erased by Israel and their allies. Children are dying of hunger and disease, denied food, clean water, medicine, and the basic right to live with dignity.",
-        "Since October 2023, Israel's genocidal assault has turned an already suffocating illegal blockade into a catastrophe. Yet our governments continue to arm, fund, and profit from this horror. We cannot wait for permission. We cannot wait for leaders who have chosen complicity over humanity. The urgency demands not one ship, but waves of ships.",
-        "Israel's recent armed attacks on the FFC's vessels—Conscience, Madleen, and Handala—ignited a worldwide response. Dozens of boats from across the globe have since joined the Global Sumud Flotilla, proving that the demand to break Israel's illegal siege on Gaza cannot be silenced or deterred."
-      ],
       "keyMessages": [
         "We sail because silence is betrayal",
         "We sail because Gaza must live",
@@ -283,12 +275,6 @@
         "label": "Donate",
         "href": "https://chuffed.org/project/138929-thousand-madleens-to-gaza-delegation-francaise",
         "style": "primary"
-      },
-      {
-        "label": "Test Robbie",
-        "shortLabel": "Test Robbie",
-        "href": "#hello",
-        "style": "primary"
       }
     ]
   },
@@ -351,7 +337,7 @@
   },
   "hero": {
     "backgroundImage": {
-      "src": "thousand-madleens-banner.jpg",
+      "src": "/thousand-madleens-banner.jpg",
       "alt": "Sailboat with Palestinian flag sailing on the Mediterranean Sea - Thousand Madleens to Gaza campaign"
     },
     "title": "Thousand Madleens to Gaza",
@@ -366,6 +352,12 @@
         "style": "primary"
       },
       {
+        "label": "Attend Events",
+        "href": "#potato",
+        "icon": "Users",
+        "style": "outline"
+      },
+      {
         "label": "Join Community",
         "href": "https://linktr.ee/thousand.madleens",
         "icon": "Users",
@@ -375,7 +367,7 @@
   },
   "footer": {
     "logo": {
-      "src": "navbar_logo_no_bg.png",
+      "src": "/navbar_logo_no_bg.png",
       "alt": "1000 Madleens to Gaza Logo"
     },
     "description": "Breaking the blockade through peaceful solidarity and international cooperation.",

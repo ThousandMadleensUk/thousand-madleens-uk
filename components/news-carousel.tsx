@@ -15,7 +15,7 @@ import {
   Clock,
 } from "lucide-react";
 import Link from "next/link";
-import content from "../content.json";
+import defaultContent from "../content.json";
 
 // Icon mapping for dynamic icon rendering
 const iconMap = {
@@ -24,7 +24,11 @@ const iconMap = {
   Users,
 };
 
-export default function NewsCarousel() {
+interface NewsCarouselProps {
+  content?: any;
+}
+
+export default function NewsCarousel({ content = defaultContent }: NewsCarouselProps) {
   const [currentSet, setCurrentSet] = useState(0);
   const [progress, setProgress] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
