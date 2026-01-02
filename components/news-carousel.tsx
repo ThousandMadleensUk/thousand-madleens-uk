@@ -24,6 +24,46 @@ const iconMap = {
   Users,
 };
 
+// Badge theme presets with coordinated colors
+const badgeThemes = {
+  "Breaking News": {
+    badge: "Breaking News",
+    badgeColor: "bg-red-600",
+    borderColor: "border-red-200",
+    buttonColor: "border-red-600 text-red-600 hover:bg-red-50"
+  },
+  "Major Announcement": {
+    badge: "Major Announcement",
+    badgeColor: "bg-orange-600",
+    borderColor: "border-orange-200",
+    buttonColor: "border-orange-600 text-orange-600 hover:bg-orange-50"
+  },
+  "Featured": {
+    badge: "Featured",
+    badgeColor: "bg-green-600",
+    borderColor: "border-green-200",
+    buttonColor: "border-green-600 text-green-600 hover:bg-green-50"
+  },
+  "Community": {
+    badge: "Community",
+    badgeColor: "bg-blue-600",
+    borderColor: "border-blue-200",
+    buttonColor: "border-blue-600 text-blue-600 hover:bg-blue-50"
+  },
+  "Local News": {
+    badge: "Local News",
+    badgeColor: "bg-purple-600",
+    borderColor: "border-purple-200",
+    buttonColor: "border-purple-600 text-purple-600 hover:bg-purple-50"
+  },
+  "Fleet Update": {
+    badge: "Fleet Update",
+    badgeColor: "bg-blue-600",
+    borderColor: "border-blue-200",
+    buttonColor: "border-blue-600 text-blue-600 hover:bg-blue-50"
+  }
+};
+
 interface NewsCarouselProps {
   content?: any;
 }
@@ -157,6 +197,16 @@ export default function NewsCarousel({ content = defaultContent }: NewsCarouselP
                 className="grid grid-cols-1 gap-4 md:gap-6 max-w-4xl mx-auto"
               >
                 {getCurrentArticles().map((article, index) => {
+                  // Get theme styling (support both new badgeTheme and legacy individual fields)
+                  const theme = article.badgeTheme
+                    ? badgeThemes[article.badgeTheme as keyof typeof badgeThemes]
+                    : {
+                        badge: article.badge,
+                        badgeColor: article.badgeColor,
+                        borderColor: article.borderColor,
+                        buttonColor: article.buttonColor
+                      };
+
                   const SourceIcon =
                     iconMap[article.sourceIcon as keyof typeof iconMap];
                   const isExternal = article.link.startsWith("http");
@@ -170,7 +220,7 @@ export default function NewsCarousel({ content = defaultContent }: NewsCarouselP
                       className="group"
                     >
                       <Card
-                        className={`overflow-hidden h-full shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-[1.02] ${article.borderColor}`}
+                        className={`overflow-hidden h-full shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-[1.02] ${theme.borderColor}`}
                       >
                         <div className="flex flex-col sm:flex-row">
                           <div className="relative h-48 sm:h-40 sm:w-64 lg:w-80 overflow-hidden flex-shrink-0">
@@ -181,9 +231,9 @@ export default function NewsCarousel({ content = defaultContent }: NewsCarouselP
                             />
                             <div className="absolute top-3 left-3">
                               <Badge
-                                className={`${article.badgeColor} text-white text-xs`}
+                                className={`${theme.badgeColor} text-white text-xs`}
                               >
-                                {article.badge}
+                                {theme.badge}
                               </Badge>
                             </div>
                             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -208,7 +258,7 @@ export default function NewsCarousel({ content = defaultContent }: NewsCarouselP
                                   <Button
                                     variant="outline"
                                     size="sm"
-                                    className={`${article.buttonColor} bg-transparent transition-all duration-300 hover:shadow-md`}
+                                    className={`${theme.buttonColor} bg-transparent transition-all duration-300 hover:shadow-md`}
                                   >
                                     Read More
                                     <ExternalLink className="ml-2 h-4 w-4" />
@@ -218,7 +268,7 @@ export default function NewsCarousel({ content = defaultContent }: NewsCarouselP
                                 <Button
                                   variant="outline"
                                   size="sm"
-                                  className={`${article.buttonColor} bg-transparent transition-all duration-300 hover:shadow-md`}
+                                  className={`${theme.buttonColor} bg-transparent transition-all duration-300 hover:shadow-md`}
                                   disabled
                                 >
                                   Coming Soon

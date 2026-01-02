@@ -76,7 +76,7 @@ collections:
                 fields:
                   - { label: "Label", name: "label", widget: "string" }
                   - { label: "Link", name: "href", widget: "string" }
-                  - { label: "Icon", name: "icon", widget: "string", hint: "Lucide icon name (e.g., HandHeart, Users)" }
+                  - { label: "Icon", name: "icon", widget: "string", hint: "Lucide icon name from: https://lucide.dev/icons/" }
                   - { label: "Style", name: "style", widget: "select", options: ["primary", "outline"] }
 
           # Mission Section
@@ -91,7 +91,7 @@ collections:
                 widget: "list"
                 fields:
                   - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Icon", name: "icon", widget: "string", hint: "Lucide icon name (e.g., Heart, Globe)" }
+                  - { label: "Icon", name: "icon", widget: "string", hint: "Lucide icon name from: https://lucide.dev/icons/" }
                   - { label: "Description", name: "description", widget: "text" }
 
           # Goals Section
@@ -106,7 +106,7 @@ collections:
                 widget: "list"
                 fields:
                   - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Icon", name: "icon", widget: "string", hint: "Lucide icon name" }
+                  - { label: "Icon", name: "icon", widget: "string", hint: "Lucide icon name from: https://lucide.dev/icons/" }
                   - { label: "Description", name: "description", widget: "text" }
 
           # Press Release
@@ -165,11 +165,25 @@ collections:
                   - { label: "Image URL", name: "image", widget: "string" }
                   - { label: "Description", name: "description", widget: "text" }
                   - { label: "Source", name: "source", widget: "string" }
-                  - { label: "Source Icon", name: "sourceIcon", widget: "string", default: "Globe" }
-                  - { label: "Badge Text", name: "badge", widget: "string" }
-                  - { label: "Badge Color", name: "badgeColor", widget: "string", hint: "CSS class like bg-red-600" }
-                  - { label: "Border Color", name: "borderColor", widget: "string", hint: "CSS class like border-red-200" }
-                  - { label: "Button Color", name: "buttonColor", widget: "string", hint: "CSS classes" }
+                  - label: "Source Icon"
+                    name: "sourceIcon"
+                    widget: "select"
+                    default: "Globe"
+                    options:
+                      - { label: "Globe (News outlets)", value: "Globe" }
+                      - { label: "MapPin (Location-based)", value: "MapPin" }
+                      - { label: "Users (Community)", value: "Users" }
+                  - label: "Badge Theme"
+                    name: "badgeTheme"
+                    widget: "select"
+                    hint: "Selects badge text and coordinated colors"
+                    options:
+                      - { label: "Breaking News (Red)", value: "Breaking News" }
+                      - { label: "Major Announcement (Orange)", value: "Major Announcement" }
+                      - { label: "Featured (Green)", value: "Featured" }
+                      - { label: "Community (Blue)", value: "Community" }
+                      - { label: "Local News (Purple)", value: "Local News" }
+                      - { label: "Fleet Update (Blue)", value: "Fleet Update" }
                   - { label: "Article Link", name: "link", widget: "string" }
                   - { label: "Date", name: "date", widget: "string", required: false }
                   - { label: "Featured", name: "featured", widget: "boolean", default: false }
