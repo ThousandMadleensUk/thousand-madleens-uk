@@ -257,7 +257,7 @@
       },
       {
         "label": "Get Involved",
-        "href": "#"
+        "href": "#Join the Movement"
       },
       {
         "label": "News",
@@ -268,12 +268,12 @@
       {
         "label": "Join the Movement",
         "shortLabel": "Join",
-        "href": "https://linktr.ee/thousand.madleens",
+        "href": "https://cryptpad.fr/form/#/2/form/view/QYfOjHYWJnKMP6FvG2ghlcNLH2MDB8UUrgz0yKRiuhQ/",
         "style": "primary"
       },
       {
         "label": "Donate",
-        "href": "https://chuffed.org/project/138929-thousand-madleens-to-gaza-delegation-francaise",
+        "href": "https://chuffed.org/project/143268-uk-delegation-1000-madleens",
         "style": "primary"
       }
     ]
@@ -283,28 +283,14 @@
     "description": "Stay updated with the latest news, ship registrations, and campaign progress across all our social platforms.",
     "platforms": [
       {
-        "name": "TikTok",
-        "icon": "RiTiktokLine",
-        "href": "https://tiktok.com/@thousandmadleentogaza",
-        "description": "Short Videos",
-        "color": "text-black-400"
-      },
-      {
-        "name": "Twitter",
-        "icon": "Twitter",
-        "href": "https://x.com/1kMadleentoGaza",
-        "description": "Live Updates",
-        "color": "text-blue-400"
-      },
-      {
         "name": "Instagram",
         "icon": "Instagram",
-        "href": "https://www.instagram.com/thousandmadleenstogaza/?utm_source=ig_web_button_share_sheet",
-        "description": "Behind Scenes",
+        "href": "https://www.instagram.com/thousandmadleens.uk",
+        "description": "Instagram",
         "color": "text-pink-400"
       },
       {
-        "name": "Telegram",
+        "name": "Telegram (Global Movement)",
         "icon": "RiTelegram2Line",
         "href": "https://t.me/+zSh_jAhFQZ1iNTNk",
         "description": "Community",
@@ -347,19 +333,19 @@
     "buttons": [
       {
         "label": "Support the Mission",
-        "href": "https://chuffed.org/project/138929-thousand-madleens-to-gaza-delegation-francaise",
+        "href": "https://chuffed.org/project/143268-uk-delegation-1000-madleens",
         "icon": "HandHeart",
         "style": "primary"
       },
       {
         "label": "Attend Events",
-        "href": "#potato",
+        "href": "#events",
         "icon": "Users",
         "style": "outline"
       },
       {
-        "label": "Join Community",
-        "href": "https://linktr.ee/thousand.madleens",
+        "label": "Join the Movement",
+        "href": "https://cryptpad.fr/form/#/2/form/view/QYfOjHYWJnKMP6FvG2ghlcNLH2MDB8UUrgz0yKRiuhQ/",
         "icon": "Users",
         "style": "outline"
       }
@@ -394,11 +380,11 @@
         "links": [
           {
             "label": "Donate",
-            "href": "https://chuffed.org/project/138929-thousand-madleens-to-gaza-delegation-francaise"
+            "href": "https://chuffed.org/project/143268-uk-delegation-1000-madleens"
           },
           {
             "label": "Join Movement",
-            "href": "https://linktr.ee/thousand.madleens"
+            "href": "https://cryptpad.fr/form/#/2/form/view/QYfOjHYWJnKMP6FvG2ghlcNLH2MDB8UUrgz0yKRiuhQ/"
           },
           {
             "label": "Telegram",
@@ -414,21 +400,11 @@
     "socialLinks": [
       {
         "platform": "Instagram",
-        "href": "https://www.instagram.com/thousandmadleenstogaza/?utm_source=ig_web_button_share_sheet",
+        "href": "https://www.instagram.com/thousandmadleens.uk",
         "icon": "Instagram"
       },
       {
-        "platform": "Twitter",
-        "href": "https://x.com/1kMadleentoGaza",
-        "icon": "Twitter"
-      },
-      {
-        "platform": "TikTok",
-        "href": "https://tiktok.com/@thousandmadleentogaza",
-        "icon": "RiTiktokLine"
-      },
-      {
-        "platform": "Telegram",
+        "platform": "Telegram (Global Movement)",
         "href": "https://t.me/+zSh_jAhFQZ1iNTNk",
         "icon": "RiTelegram2Line"
       }
