@@ -30,7 +30,7 @@ import {
   Check,
 } from "lucide-react";
 import Link from "next/link";
-import { RiTiktokLine, RiTelegram2Line } from "react-icons/ri";
+import { RiTiktokLine, RiTelegram2Line, RiMailLine } from "react-icons/ri";
 import { toast } from "sonner";
 
 // Icon mapping for dynamic icon rendering
@@ -52,6 +52,7 @@ const iconMap = {
   Clipboard,
   RiTiktokLine,
   RiTelegram2Line,
+    RiMailLine,
 };
 
 interface MadleensLandingContentProps {

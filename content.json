@@ -116,7 +116,7 @@
   "site": {
     "title": "Thousand Madleens to Gaza UK Delegation",
     "description": "UK Delegation - Part of a global civilian flotilla sailing Spring 2026 to break Israel's illegal blockade on Gaza.",
-    "campaignMessage": "Join the UK delegation! 🇬🇧 Sailing Spring 2026 as part of #1000MadleensToGaza - a global civilian flotilla to break Israel's illegal blockade. #FreePalestine #UKDelegation"
+    "campaignMessage": "Join the UK delegation! 🇬🇧 Sailing Spring 2026 as part of #1000MadleensToGaza - a global civilian flotilla to break Israel's illegal blockade. #FreePalestine #BreakTheBlockade"
   },
   "mission": {
     "title": "",
@@ -172,15 +172,22 @@
     ]
   },
   "socialMedia": {
-    "title": "Follow Our Journey",
-    "description": "Stay updated with the latest news and campaign progress across all our social platforms.",
+    "title": "Stay Connected",
+    "description": "Email us directly or follow our journey on social media.",
     "platforms": [
       {
         "name": "Instagram",
         "icon": "Instagram",
         "href": "https://www.instagram.com/thousandmadleens.uk",
-        "description": "Instagram",
+        "description": "@thousandmadleens.uk",
         "color": "text-pink-400"
+      },
+      {
+        "name": "Email",
+        "icon": "RiMailLine",
+        "href": "mailto:thousandmadleens.uk@proton.me",
+        "description": "thousandmadleens.uk@proton.me",
+        "color": "text-green-400"
       },
       {
         "name": "Telegram (Global Movement)",

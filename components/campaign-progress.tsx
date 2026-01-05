@@ -82,7 +82,7 @@ export default function CampaignProgress({ campaignId = 143268 }: CampaignProgre
   const percentage = Math.min((collected / target) * 100, 100);
 
   return (
-    <div className="max-w-md mx-auto bg-white rounded-lg border-2 border-green-200 shadow-lg overflow-hidden">
+    <div className="bg-white rounded-lg border-2 border-green-200 shadow-lg overflow-hidden">
       {/* Banner Image */}
       <div className="w-full h-48 overflow-hidden">
         <img
