@@ -30,6 +30,7 @@ import {
   Check,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { RiTiktokLine, RiTelegram2Line, RiMailLine } from "react-icons/ri";
 import { toast } from "sonner";
 
@@ -68,14 +69,16 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
         <div className="w-full max-w-7xl mx-auto px-4 py-1 flex items-center justify-between">
           <div className="flex items-center space-x-3 flex-shrink-0">
-            <img
+            <Image
               src={content.navigation.logo.src}
               alt={content.navigation.logo.alt}
+              width={80}
+              height={80}
               className="h-20 w-auto object-contain"
             />
           </div>
           <nav className="hidden md:flex space-x-8 flex-1 justify-center">
-            {content.navigation.menuItems.map((item) => (
+            {content.navigation.menuItems.map((item: any) => (
               <a
                 key={item.href}
                 href={item.href}
@@ -114,10 +117,11 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
       >
         {/* Banner Image Background */}
         <div className="absolute inset-0">
-          <img
+          <Image
             src={content.hero.backgroundImage.src}
             alt={content.hero.backgroundImage.alt}
-            className="w-full h-full object-cover object-top opacity-20"
+            fill
+            className="object-cover object-top opacity-20"
           />
           <div className="absolute inset-0 "></div>
         </div>
@@ -146,7 +150,7 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
                 {content.hero.description}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-                {content.hero.buttons.map((button, index) => {
+                {content.hero.buttons.map((button: any, index: number) => {
                   const IconComponent =
                     iconMap[button.icon as keyof typeof iconMap];
                   return (
@@ -191,7 +195,7 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
               </div>
 
               <div className="grid md:grid-cols-2 gap-8 transform translate-y-8">
-                {content.mission.cards.map((card, index) => {
+                {content.mission.cards.map((card: any, index: number) => {
                   const IconComponent =
                     iconMap[card.icon as keyof typeof iconMap];
                   return (
@@ -207,7 +211,7 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
                       </CardHeader>
                       <CardContent>
                         <div className="space-y-4">
-                          {card.description.split('\n\n').map((paragraph, pIndex) => (
+                          {card.description.split('\n\n').map((paragraph: any, pIndex: number) => (
                             <p key={pIndex} className="text-gray-200">{paragraph}</p>
                           ))}
                         </div>
@@ -241,7 +245,7 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
             </div>
 
             <div className="grid md:grid-cols-3 gap-12">
-              {content.goals.items.map((item, index) => {
+              {content.goals.items.map((item: any, index: number) => {
                 const IconComponent =
                   iconMap[item.icon as keyof typeof iconMap];
                 return (
@@ -295,7 +299,7 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
               {/* Join UK Delegation Card */}
               <div className="bg-white rounded-lg border-2 border-green-200 shadow-lg p-6 flex flex-col">
                 <div className="space-y-4 mb-6 flex-grow">
-                  {content.getInvolved.joinDelegation.points.map((point, index) => (
+                  {content.getInvolved.joinDelegation.points.map((point: any, index: number) => (
                     <div key={index} className="flex items-start gap-3">
                       <Check className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
                       <p className="text-base text-gray-700 leading-relaxed">
@@ -340,7 +344,7 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
             </p>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-1 sm:gap-2 mb-3 sm:mb-4">
-              {content.socialMedia.platforms.map((platform, index) => {
+              {content.socialMedia.platforms.map((platform: any, index: number) => {
                 const IconComponent =
                   iconMap[platform.icon as keyof typeof iconMap];
                 return (
@@ -375,12 +379,12 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
                   className="text-xs sm:text-sm text-gray-300 italic"
                   id="campaign-message"
                 >
-                  "{campaignMessage}"
+                  &quot;{campaignMessage}&quot;
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center">
                 {content.socialMedia.shareSection.buttons.map(
-                  (button, index) => {
+                  (button: any, index: number) => {
                     const IconComponent =
                       iconMap[button.icon as keyof typeof iconMap];
 
@@ -489,7 +493,7 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4 text-gray-700">
-                {content.disclaimer.points.map((point, index) => (
+                {content.disclaimer.points.map((point: any, index: number) => (
                   <p key={index}>
                     <strong>{point.title}:</strong> {point.description}
                   </p>
@@ -506,9 +510,11 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <img
+                <Image
                   src={content.footer.logo.src}
                   alt={content.footer.logo.alt}
+                  width={96}
+                  height={96}
                   className="h-24 w-auto object-contain filter brightness-0 invert"
                 />
               </div>
@@ -517,11 +523,11 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
               </p>
             </div>
 
-            {content.footer.sections.map((section, index) => (
+            {content.footer.sections.map((section: any, index: number) => (
               <div key={index}>
                 <h4 className="font-semibold mb-4">{section.title}</h4>
                 <ul className="space-y-2 text-sm text-gray-400">
-                  {section.links.map((link, linkIndex) => (
+                  {section.links.map((link: any, linkIndex: number) => (
                     <li key={linkIndex}>
                       <a
                         href={link.href}
@@ -541,7 +547,7 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
             <div>
               <h4 className="font-semibold mb-4">Follow Us</h4>
               <div className="flex space-x-3">
-                {content.footer.socialLinks.map((social, index) => {
+                {content.footer.socialLinks.map((social: any, index: number) => {
                   const IconComponent =
                     iconMap[social.icon as keyof typeof iconMap];
                   return (
@@ -562,7 +568,7 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
           <div className="border-t border-gray-800 mt-8 pt-8 text-center">
             <p className="text-gray-400 text-sm">
               © {new Date().getFullYear()} {content.footer.copyright.text} |
-              {content.footer.copyright.links.map((link, index) => (
+              {content.footer.copyright.links.map((link: any, index: number) => (
                 <span key={index}>
                   <a
                     href={link.href}

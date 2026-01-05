@@ -69,12 +69,12 @@ export default function PressRelease({ content = defaultContent }: PressReleaseP
               <div className="mb-4 p-3 bg-green-50 border-l-4 border-green-600">
                 <div className="flex flex-wrap gap-2">
                   {pressRelease.announcement.keyMessages.map(
-                    (message, index) => (
+                    (message: any, index: number) => (
                       <span
                         key={index}
                         className="text-green-700 font-semibold italic text-sm"
                       >
-                        "{message}"
+                        &quot;{message}&quot;
                       </span>
                     )
                   )}
@@ -119,7 +119,7 @@ export default function PressRelease({ content = defaultContent }: PressReleaseP
                   <div className="pt-3 space-y-4 border-t border-gray-200">
                     {/* Display structured sections */}
                     {pressRelease.announcement.sections.map(
-                      (section, index) => (
+                      (section: any, index: number) => (
                         <div key={index} className="space-y-2">
                           {section.title && (
                             <h5 className="text-base font-bold text-gray-900">
@@ -151,7 +151,7 @@ export default function PressRelease({ content = defaultContent }: PressReleaseP
                         </h5>
                         <div className="space-y-1">
                           {pressRelease.announcement.mediaContacts.map(
-                            (contact, index) => (
+                            (contact: any, index: number) => (
                               <div key={index} className="text-xs">
                                 <span className="font-medium">
                                   {contact.name}
@@ -174,7 +174,7 @@ export default function PressRelease({ content = defaultContent }: PressReleaseP
                         </h5>
                         <div className="flex flex-wrap gap-1">
                           {pressRelease.announcement.websites.map(
-                            (website, index) => (
+                            (website: any, index: number) => (
                               <Link key={index} href={website} target="_blank">
                                 <Badge
                                   variant="outline"
@@ -202,7 +202,7 @@ export default function PressRelease({ content = defaultContent }: PressReleaseP
                       </h4>
                       <div className="grid md:grid-cols-2 gap-3">
                         {pressRelease.announcement.mediaContacts.map(
-                          (contact, index) => (
+                          (contact: any, index: number) => (
                             <div
                               key={index}
                               className="p-3 bg-gray-50 rounded-lg"
@@ -247,7 +247,7 @@ export default function PressRelease({ content = defaultContent }: PressReleaseP
                       </h4>
                       <div className="flex flex-wrap gap-2">
                         {pressRelease.announcement.websites.map(
-                          (website, index) => (
+                          (website: any, index: number) => (
                             <Link key={index} href={website} target="_blank">
                               <Button
                                 variant="outline"

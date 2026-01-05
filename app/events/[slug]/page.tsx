@@ -37,6 +37,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   return {
     title: `${event.title} - Thousand Madleens to Gaza`,
-    description: event.description,
+    description: event.shortDescription,
   };
 }

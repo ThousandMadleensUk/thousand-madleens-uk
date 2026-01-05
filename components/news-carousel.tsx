@@ -109,7 +109,7 @@ export default function NewsCarousel({ content = defaultContent }: NewsCarouselP
     }, 100);
 
     return () => clearInterval(interval);
-  }, [currentSet, isPaused, totalSets]);
+  }, [currentSet, isPaused, totalSets, nextSet]);
 
   return (
     <section id="news" className="py-16 bg-white">
@@ -196,7 +196,7 @@ export default function NewsCarousel({ content = defaultContent }: NewsCarouselP
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 className="grid grid-cols-1 gap-4 md:gap-6 max-w-4xl mx-auto"
               >
-                {getCurrentArticles().map((article, index) => {
+                {getCurrentArticles().map((article: any, index: number) => {
                   // Get theme styling (support both new badgeTheme and legacy individual fields)
                   const theme = article.badgeTheme
                     ? badgeThemes[article.badgeTheme as keyof typeof badgeThemes]

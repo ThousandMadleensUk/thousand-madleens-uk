@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Loader2, HandHeart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 interface CampaignProgressProps {
   campaignId?: number;
@@ -84,11 +85,12 @@ export default function CampaignProgress({ campaignId = 143268 }: CampaignProgre
   return (
     <div className="bg-white rounded-lg border-2 border-green-200 shadow-lg overflow-hidden">
       {/* Banner Image */}
-      <div className="w-full h-48 overflow-hidden">
-        <img
+      <div className="w-full h-48 overflow-hidden relative">
+        <Image
           src="/donate.jpg"
           alt="Support the campaign"
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
         />
       </div>
 

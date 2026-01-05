@@ -10,6 +10,7 @@ import {
   ArrowLeft,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { AddToCalendarButton } from "add-to-calendar-button-react";
 
 // Event type badge themes (matching events-section.tsx)
@@ -81,15 +82,17 @@ export default function EventDetailPage({ event, content }: EventDetailPageProps
         <div className="w-full max-w-7xl mx-auto px-4 py-1 flex items-center justify-between">
           <div className="flex items-center space-x-3 flex-shrink-0">
             <Link href="/">
-              <img
+              <Image
                 src={content.navigation.logo.src}
                 alt={content.navigation.logo.alt}
+                width={80}
+                height={80}
                 className="h-20 w-auto object-contain cursor-pointer"
               />
             </Link>
           </div>
           <nav className="hidden md:flex space-x-8 flex-1 justify-center">
-            {content.navigation.menuItems.map((item) => (
+            {content.navigation.menuItems.map((item: any) => (
               <Link
                 key={item.href}
                 href={`/${item.href}`}
@@ -124,10 +127,11 @@ export default function EventDetailPage({ event, content }: EventDetailPageProps
       {/* Hero Banner - Same as home page */}
       <section className="relative h-96 bg-black text-white overflow-hidden mt-24">
         <div className="absolute inset-0">
-          <img
+          <Image
             src={heroBannerImage}
             alt="Thousand Madleens to Gaza"
-            className="w-full h-full object-cover object-top opacity-20"
+            fill
+            className="object-cover object-top opacity-20"
           />
           <div className="absolute inset-0 "></div>
         </div>

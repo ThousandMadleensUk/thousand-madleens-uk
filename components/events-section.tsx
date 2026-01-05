@@ -126,7 +126,7 @@ export default function EventsSection({ content = defaultContent }: EventsSectio
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 className="grid grid-cols-1 gap-4 md:gap-6 max-w-4xl mx-auto"
               >
-                {getCurrentEvents().map((event, index) => {
+                {getCurrentEvents().map((event: any, index: number) => {
                   // Get theme styling
                   const theme = eventThemes[event.eventType as keyof typeof eventThemes] || eventThemes["Community"];
 

@@ -38,7 +38,7 @@ export default function ContactUsWidget() {
               <CardHeader>
                 <CardTitle>Send a Message</CardTitle>
                 <CardDescription>
-                  We'll get back to you within 24 hours
+                  We&apos;ll get back to you within 24 hours
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
