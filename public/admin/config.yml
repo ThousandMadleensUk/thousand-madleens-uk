@@ -127,6 +127,36 @@ collections:
                   - { label: "Button Text", name: "buttonText", widget: "string" }
                   - { label: "Button URL", name: "buttonUrl", widget: "string", hint: "Link to signup form" }
 
+          # Events Section
+          - label: "Events Section"
+            name: "events"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Events"
+                name: "events"
+                widget: "list"
+                fields:
+                  - { label: "Event ID", name: "id", widget: "number" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "City", name: "city", widget: "string" }
+                  - { label: "Date", name: "date", widget: "string", hint: "e.g., 31st January 2026" }
+                  - { label: "Time", name: "time", widget: "string", hint: "e.g., 11:00 AM" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Image URL", name: "image", widget: "string" }
+                  - label: "Event Type"
+                    name: "eventType"
+                    widget: "select"
+                    hint: "Selects badge and coordinated colors"
+                    options:
+                      - { label: "March (Red)", value: "March" }
+                      - { label: "Fundraiser (Green)", value: "Fundraiser" }
+                      - { label: "Meeting (Blue)", value: "Meeting" }
+                      - { label: "Workshop (Purple)", value: "Workshop" }
+                      - { label: "Community Event (Orange)", value: "Community" }
+                  - { label: "Registration Link", name: "link", widget: "string", required: false }
+
           # Press Release
           - label: "Press Release"
             name: "pressRelease"

@@ -11,6 +11,7 @@ import {
 import NewsCarousel from "@/components/news-carousel";
 import PressRelease from "@/components/press-release";
 import CampaignProgress from "@/components/campaign-progress";
+import EventsSection from "@/components/events-section";
 import {
   Ship,
   Heart,
@@ -314,6 +315,9 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
           </motion.div>
         </div>
       </section>
+
+      {/* Events Section */}
+      <EventsSection content={content} />
 
       {/* Press Release Section */}
       <PressRelease content={content} />

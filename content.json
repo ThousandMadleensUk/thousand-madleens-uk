@@ -35,6 +35,23 @@
       "buttonUrl": "https://cryptpad.fr/form/#/2/form/view/QYfOjHYWJnKMP6FvG2ghlcNLH2MDB8UUrgz0yKRiuhQ/"
     }
   },
+  "events": {
+    "title": "Upcoming Events",
+    "description": "Join us at events across the UK as we organize the Spring 2026 flotilla",
+    "events": [
+      {
+        "id": 1,
+        "title": "National March",
+        "city": "London",
+        "date": "31st January 2026",
+        "time": "11:00 AM",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Join us for this important march in solidarity with Palestine.",
+        "eventType": "March",
+        "image": "/thousand-madleens-banner.jpg",
+        "link": "#"
+      }
+    ]
+  },
   "pressRelease": {
     "title": "Official Press Release",
     "subtitle": "Freedom Flotilla Coalition & Thousand Madleens to Gaza Unite",
