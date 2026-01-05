@@ -1,29 +1,39 @@
 {
   "goals": {
-    "title": "Goals & Organization",
-    "description": "Our mission is organized around clear objectives and coordinated international action.",
+    "title": "How Your Donations Help",
+    "description": "Your support directly funds boats, equipment, and training for the UK delegation's contribution to the Spring 2026 flotilla.",
     "items": [
       {
-        "title": "Maritime Flotilla",
+        "title": "Boats & Equipment",
         "icon": "Ship",
-        "description": "Coordinate 1000 ships from multiple nations to converge and sail together toward Gaza, creating an unprecedented peaceful maritime demonstration."
+        "description": "Acquire and equip boats for the flotilla. Cover repairs, safety checks, GPS, communications, cameras, and essential maritime equipment needed for the journey to Gaza."
       },
       {
-        "title": "Break the Blockade",
-        "icon": "Anchor",
-        "description": "Challenge the illegal blockade through peaceful resistance, bringing international attention to the humanitarian crisis and demanding open borders."
-      },
-      {
-        "title": "Global Unity",
+        "title": "Training & Coordination",
         "icon": "Users",
-        "description": "Build an international coalition of civil society organizations, activists, and supporters committed to justice and human rights."
+        "description": "Train and coordinate UK volunteers and crews. Provide safety gear, communication tools, and prepare departure logistics from European ports."
+      },
+      {
+        "title": "International Solidarity",
+        "icon": "Globe",
+        "description": "Contribute to the €3 million international fundraising target. The UK delegation is one of many worldwide working together to break the blockade."
       }
     ]
   },
   "getInvolved": {
     "title": "Get Involved",
-    "description": "Support our mission to break the blockade of Gaza. Every contribution helps us reach our goal of organizing 1000 ships for Palestinian freedom.",
-    "campaignId": 143268
+    "description": "Sailing in Spring 2026. Support our mission by donating or join the UK delegation to help organize boats breaking the siege on Gaza.",
+    "campaignId": 143268,
+    "joinDelegation": {
+      "title": "Join the UK Delegation",
+      "points": [
+        "Whether you're living in the UK, have ties here, or want to help out from afar - we welcome you",
+        "Join us in organising boats heading towards Gaza in spring 2026",
+        "Whether you have notable skills or simply commitment to the cause, there's a place for you"
+      ],
+      "buttonText": "Join the UK Delegation",
+      "buttonUrl": "https://cryptpad.fr/form/#/2/form/view/QYfOjHYWJnKMP6FvG2ghlcNLH2MDB8UUrgz0yKRiuhQ/"
+    }
   },
   "pressRelease": {
     "title": "Official Press Release",
@@ -87,22 +97,22 @@
   },
   "site": {
     "title": "Thousand Madleens to Gaza UK Delegation",
-    "description": "Breaking the blockade through peaceful solidarity and international cooperation.",
-    "campaignMessage": "Join the historic #1000MadleensToGaza flotilla! 🚢 Breaking the blockade through peaceful solidarity. Together we sail for justice and human rights. #FreePalestine #BreakTheBlockade"
+    "description": "UK Delegation - Part of a global civilian flotilla sailing Spring 2026 to break Israel's illegal blockade on Gaza.",
+    "campaignMessage": "Join the UK delegation! 🇬🇧 Sailing Spring 2026 as part of #1000MadleensToGaza - a global civilian flotilla to break Israel's illegal blockade. #FreePalestine #UKDelegation"
   },
   "mission": {
-    "title": "Our Mission",
-    "description": "A tribute to the resilience and patience of the people of Gaza, and a collective movement to stand alongside them.",
+    "title": "",
+    "description": "",
     "cards": [
       {
-        "title": "Tribute to Resilience",
-        "icon": "Heart",
-        "description": "The \"Madleen\" represents the unwavering spirit of the Palestinians who refuse to accept injustice. Our campaign honors the courage of all who have sailed these waters before us, carrying hope across the Mediterranean."
+        "title": "UK Delegation's Role",
+        "icon": "Ship",
+        "description": "We are UK-based medics, sailors, and grassroots organisers working as part of the international Thousand Madleens network.\n\nWe're raising funds to acquire boats, equipment, and training for the UK's contribution to the global flotilla sailing in Spring 2026."
       },
       {
-        "title": "Global Solidarity",
-        "icon": "Globe",
-        "description": "From every corner of the world, we unite in peaceful resistance. 1000 ships from many nations will converge to break the Israeli genocidal blockade through the power of international civil society."
+        "title": "Why This Matters",
+        "icon": "Megaphone",
+        "description": "The UK Government is an active and complicit partner in Israel's genocide. This makes it crucial that UK citizens object and raise the alarm internationally.\n\nWe stand on the right side of history. Together, we're organizing to show the world that the people demand justice for Palestine."
       }
     ]
   },
@@ -307,7 +317,7 @@
     "title": "Thousand Madleens to Gaza UK Delegation",
     "subtitle": "Breaking the Israeli Blockade",
     "tagline": "1000 Ships. One Mission. Free Gaza.",
-    "description": "A global maritime flotilla campaign to break the blockade of Gaza through peaceful solidarity. Inspired by resilience, driven by hope, united in action.",
+    "description": "The UK delegation is part of an international citizen movement organizing a peaceful civilian flotilla to challenge Israel's illegal blockade on Gaza. Sailing Spring 2026 with boats from across the world to deliver aid and break the siege.",
     "buttons": [
       {
         "label": "DONATE",

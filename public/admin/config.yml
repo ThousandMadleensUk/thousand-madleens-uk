@@ -84,15 +84,13 @@ collections:
             name: "mission"
             widget: "object"
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
               - label: "Mission Cards"
                 name: "cards"
                 widget: "list"
                 fields:
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Icon", name: "icon", widget: "string", hint: "Lucide icon name from: https://lucide.dev/icons/" }
-                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Description", name: "description", widget: "text", hint: "Use \\n\\n to separate paragraphs" }
 
           # Goals Section
           - label: "Goals Section"
@@ -117,6 +115,17 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Campaign ID", name: "campaignId", widget: "number", hint: "Chuffed campaign ID (e.g., 143268)" }
+              - label: "Join Delegation"
+                name: "joinDelegation"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string", hint: "Not displayed on site, for CMS organization only" }
+                  - label: "Bullet Points"
+                    name: "points"
+                    widget: "list"
+                    field: { label: "Point", name: "point", widget: "text" }
+                  - { label: "Button Text", name: "buttonText", widget: "string" }
+                  - { label: "Button URL", name: "buttonUrl", widget: "string", hint: "Link to signup form" }
 
           # Press Release
           - label: "Press Release"

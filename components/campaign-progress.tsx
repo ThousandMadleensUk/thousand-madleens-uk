@@ -82,15 +82,25 @@ export default function CampaignProgress({ campaignId = 143268 }: CampaignProgre
   const percentage = Math.min((collected / target) * 100, 100);
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-white rounded-lg border-2 border-green-200 shadow-lg">
-      <div className="mb-3 flex justify-between items-baseline">
-        <span className="text-2xl font-bold text-black">
-          {symbol}{collected.toLocaleString()}
-        </span>
-        <span className="text-gray-600">
-          of {symbol}{target.toLocaleString()}
-        </span>
+    <div className="max-w-md mx-auto bg-white rounded-lg border-2 border-green-200 shadow-lg overflow-hidden">
+      {/* Banner Image */}
+      <div className="w-full h-48 overflow-hidden">
+        <img
+          src="/donate.jpg"
+          alt="Support the campaign"
+          className="w-full h-full object-cover"
+        />
       </div>
+
+      <div className="p-6">
+        <div className="mb-3 flex justify-between items-baseline">
+          <span className="text-2xl font-bold text-black">
+            {symbol}{collected.toLocaleString()}
+          </span>
+          <span className="text-gray-600">
+            of {symbol}{target.toLocaleString()}
+          </span>
+        </div>
 
       {/* Progress bar */}
       <div className="w-full h-6 bg-gray-200 rounded-full overflow-hidden mb-6">
@@ -100,13 +110,14 @@ export default function CampaignProgress({ campaignId = 143268 }: CampaignProgre
         />
       </div>
 
-      {/* Donate button */}
-      <Link href="https://chuffed.org/project/143268-uk-delegation-1000-madleens" target="_blank" className="block">
-        <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-6 text-lg font-bold">
-          <HandHeart className="mr-2 h-5 w-5" />
-          Donate Now
-        </Button>
-      </Link>
+        {/* Donate button */}
+        <Link href="https://chuffed.org/project/143268-uk-delegation-1000-madleens" target="_blank" className="block">
+          <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-6 text-lg font-bold">
+            <HandHeart className="mr-2 h-5 w-5" />
+            Donate Now
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 }

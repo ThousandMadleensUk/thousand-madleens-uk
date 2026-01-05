@@ -27,6 +27,7 @@ import {
   MessageSquare,
   AlertTriangle,
   Clipboard,
+  Check,
 } from "lucide-react";
 import Link from "next/link";
 import { RiTiktokLine, RiTelegram2Line } from "react-icons/ri";
@@ -204,7 +205,11 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <p className="text-gray-200">{card.description}</p>
+                        <div className="space-y-4">
+                          {card.description.split('\n\n').map((paragraph, pIndex) => (
+                            <p key={pIndex} className="text-gray-200">{paragraph}</p>
+                          ))}
+                        </div>
                       </CardContent>
                     </Card>
                   );
@@ -279,7 +284,33 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
               </p>
             </div>
 
-            <CampaignProgress campaignId={content.getInvolved.campaignId} />
+            {/* Two-column grid on desktop, stacked on mobile */}
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Campaign Progress Card */}
+              <div>
+                <CampaignProgress campaignId={content.getInvolved.campaignId} />
+              </div>
+
+              {/* Join UK Delegation Card */}
+              <div className="bg-white rounded-lg border-2 border-green-200 shadow-lg p-6 flex flex-col">
+                <div className="space-y-4 mb-6 flex-grow">
+                  {content.getInvolved.joinDelegation.points.map((point, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <Check className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
+                      <p className="text-base text-gray-700 leading-relaxed">
+                        {point}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+                <Link href={content.getInvolved.joinDelegation.buttonUrl} target="_blank" className="block">
+                  <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-6 text-lg font-bold">
+                    <Users className="mr-2 h-5 w-5" />
+                    {content.getInvolved.joinDelegation.buttonText}
+                  </Button>
+                </Link>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
