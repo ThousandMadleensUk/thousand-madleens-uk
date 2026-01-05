@@ -147,6 +147,7 @@ collections:
                   - { label: "Short Description", name: "shortDescription", widget: "text", hint: "Brief description for event card (2-3 sentences)" }
                   - { label: "Full Description", name: "fullDescription", widget: "text", hint: "Detailed description for event detail page. Use line breaks for paragraphs." }
                   - { label: "Image URL", name: "image", widget: "string" }
+                  - { label: "Tickets URL", name: "ticketsUrl", widget: "string", required: false, hint: "Optional: Link to ticket/registration page for this event" }
                   - label: "Event Type"
                     name: "eventType"
                     widget: "select"

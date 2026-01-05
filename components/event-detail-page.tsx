@@ -171,7 +171,7 @@ export default function EventDetailPage({ event, content }: EventDetailPageProps
 
       {/* Event Details */}
       <div className="container mx-auto px-4 py-12 max-w-4xl">
-        {/* Back Button and Add to Calendar */}
+        {/* Back Button and Action Buttons */}
         <div className="mb-8 flex flex-wrap items-center justify-between gap-4">
           <Link href="/#events">
             <Button variant="outline" className="border-green-600 text-green-600 hover:bg-green-50">
@@ -180,19 +180,31 @@ export default function EventDetailPage({ event, content }: EventDetailPageProps
             </Button>
           </Link>
 
-          {/* Add to Calendar Button */}
-          <div>
-            <AddToCalendarButton
-                name={event.title}
-                startDate={event.dateTime.split('T')[0]}
-                startTime={event.dateTime.split('T')[1]}
-                endTime={event.endTime || "23:00"}
-                timeZone="Europe/London"
-                location={event.location}
-                description={event.shortDescription}
-                options="'Apple','Google','iCal','Outlook.com','Microsoft 365'"
-                lightMode="bodyScheme"
-            />
+          <div className="flex flex-wrap gap-3">
+            {/* Get Tickets Button - Only if ticketsUrl exists */}
+            {event.ticketsUrl && (
+              <Link href={event.ticketsUrl} target="_blank">
+                <Button className="bg-green-600 hover:bg-green-700 text-white">
+                  <ExternalLink className="mr-2 h-4 w-4" />
+                  Get Tickets
+                </Button>
+              </Link>
+            )}
+
+            {/* Add to Calendar Button */}
+            <div>
+              <AddToCalendarButton
+                  name={event.title}
+                  startDate={event.dateTime.split('T')[0]}
+                  startTime={event.dateTime.split('T')[1]}
+                  endTime={event.endTime || "23:00"}
+                  timeZone="Europe/London"
+                  location={event.location}
+                  description={event.shortDescription}
+                  options="'Apple','Google','iCal','Outlook.com','Microsoft 365'"
+                  lightMode="bodyScheme"
+              />
+            </div>
           </div>
         </div>
 
