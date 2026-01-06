@@ -172,15 +172,8 @@ export default function EventDetailPage({ event, content }: EventDetailPageProps
 
       {/* Event Details */}
       <div className="container mx-auto px-4 py-12 max-w-4xl">
-        {/* Back Button and Action Buttons */}
+        {/* Action Buttons */}
         <div className="mb-8 flex flex-wrap items-center justify-between gap-4">
-          <Link href="/#events">
-            <Button variant="outline" className="border-green-600 text-green-600 hover:bg-green-50">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Events
-            </Button>
-          </Link>
-
           <div className="flex flex-wrap gap-3">
             {/* Get Tickets Button - Only if ticketsUrl exists */}
             {event.ticketsUrl && (
@@ -191,21 +184,21 @@ export default function EventDetailPage({ event, content }: EventDetailPageProps
                 </Button>
               </Link>
             )}
+          </div>
 
-            {/* Add to Calendar Button */}
-            <div>
-              <AddToCalendarButton
-                  name={event.title}
-                  startDate={event.dateTime.split('T')[0]}
-                  startTime={event.dateTime.split('T')[1]}
-                  endTime={event.endTime || "23:00"}
-                  timeZone="Europe/London"
-                  location={event.location}
-                  description={event.shortDescription}
-                  options="'Apple','Google','iCal','Outlook.com','Microsoft 365'"
-                  lightMode="bodyScheme"
-              />
-            </div>
+          {/* Add to Calendar Button */}
+          <div>
+            <AddToCalendarButton
+                name={event.title}
+                startDate={event.dateTime.split('T')[0]}
+                startTime={event.dateTime.split('T')[1]}
+                endTime={event.endTime || "23:00"}
+                timeZone="Europe/London"
+                location={event.location}
+                description={event.shortDescription}
+                options="'Apple','Google','iCal','Outlook.com','Microsoft 365'"
+                lightMode="bodyScheme"
+            />
           </div>
         </div>
 
@@ -223,7 +216,7 @@ export default function EventDetailPage({ event, content }: EventDetailPageProps
 
         {/* Event Image Inline */}
         <motion.div
-          className="mb-12 relative w-full h-96"
+          className="mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
@@ -231,8 +224,9 @@ export default function EventDetailPage({ event, content }: EventDetailPageProps
           <Image
             src={event.image}
             alt={event.title}
-            fill
-            className="object-cover rounded-lg shadow-lg"
+            width={1200}
+            height={800}
+            className="w-full h-auto rounded-lg shadow-lg"
           />
         </motion.div>
 
