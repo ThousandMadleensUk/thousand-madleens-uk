@@ -237,12 +237,6 @@
           "shortLabel": "Email",
           "icon": "Mail",
           "action": "email"
-        },
-        {
-          "label": "Download Graphics",
-          "shortLabel": "Graphics",
-          "icon": "ExternalLink",
-          "href": "https://drive.google.com/drive/folders/1PlywKwfu7Ad4JZKzGdLuvtF8Rk3M-riu"
         }
       ]
     }
