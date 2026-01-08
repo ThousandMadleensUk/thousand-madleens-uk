@@ -78,7 +78,7 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
               width={240}
               height={100}
               quality={95}
-              className="h-16 w-auto object-contain my-2"
+              className="h-16 w-auto object-contain my-2 ml-4"
             />
           </div>
           <nav className="hidden md:flex space-x-8 flex-1 justify-center">

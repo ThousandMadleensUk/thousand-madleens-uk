@@ -93,7 +93,7 @@ export default function EventDetailPage({ event, content }: EventDetailPageProps
                 width={240}
                 height={100}
                 quality={95}
-                className="h-16 w-auto object-contain cursor-pointer my-2"
+                className="h-16 w-auto object-contain cursor-pointer my-2 ml-4"
               />
             </Link>
           </div>
