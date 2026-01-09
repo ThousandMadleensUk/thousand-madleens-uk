@@ -41,20 +41,6 @@
     "events": [
       {
         "id": 1,
-        "slug": "scot-national-demo",
-        "title": "National Demonstration for Palestine",
-        "location": "Edinburgh",
-        "dateTime": "2026-17-15T13:00",
-        "endTime": "18:00",
-        "shortDescription": "Thousand Madleens to Gaza (UK) will be joining the National Demonstration in Edinburgh on Saturday, 17th January, calling for an end to imperialism, repression, and the ongoing violence in Palestine",
-        "fullDescription": "Thousand Madleens to Gaza (UK) will be joining the National Demonstration in Edinburgh on Saturday, 17th January, calling for an end to imperialism, repression, and the ongoing violence in Palestine.\n\nWe will assemble at Johnston Terrace at 1 PM and march to the Scottish Parliament in solidarity with those fighting for justice and liberation. Join us as we stand united against oppression and show our commitment to global human rights",
-        "shareMessage": "Join Thousand Madleens to Gaza UK at the National Demonstration for Palestine.",
-        "eventType": "Fundraiser",
-        "image": "/images/events/scot_national.jpg"
-      },
-
-      {
-        "id": 2,
         "slug": "gaza-sunbirds-comedy",
         "title": "Gaza Sunbirds Festival of Comedy",
         "location": "Union Chapel, London",
@@ -66,6 +52,19 @@
         "shareMessage": "Join us for an evening of comedy supporting Palestinian freedom and the Gaza Sunbirds! Get your tickets now.",
         "eventType": "Fundraiser",
         "image": "/images/events/sunbirds.jpg"
+      },
+      {
+        "id": 2,
+        "slug": "scot-national-demo",
+        "title": "National Demonstration for Palestine",
+        "location": "Edinburgh",
+        "dateTime": "2026-01-17T13:00",
+        "endTime": "18:00",
+        "shortDescription": "Thousand Madleens to Gaza (UK) will be joining the National Demonstration in Edinburgh on Saturday, 17th January, calling for an end to imperialism, repression, and the ongoing violence in Palestine",
+        "fullDescription": "Thousand Madleens to Gaza (UK) will be joining the National Demonstration in Edinburgh on Saturday, 17th January, calling for an end to imperialism, repression, and the ongoing violence in Palestine.\n\nWe will assemble at Johnston Terrace at 1 PM and march to the Scottish Parliament in solidarity with those fighting for justice and liberation. Join us as we stand united against oppression and show our commitment to global human rights",
+        "shareMessage": "Join Thousand Madleens to Gaza UK at the National Demonstration for Palestine.",
+        "eventType": "Protest",
+        "image": "/images/events/scot_national.jpg"
       },
       {
         "id": 3,
