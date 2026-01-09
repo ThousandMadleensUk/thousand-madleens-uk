@@ -39,9 +39,22 @@
     "title": "Upcoming Events",
     "description": "Join us at events across the UK as we prepare for the Spring 2026 flotilla.",
     "events": [
-
       {
         "id": 1,
+        "slug": "scot-national-demo",
+        "title": "National Demonstration for Palestine",
+        "location": "Edinburgh",
+        "dateTime": "2026-17-15T13:00",
+        "endTime": "18:00",
+        "shortDescription": "Thousand Madleens to Gaza (UK) will be joining the National Demonstration in Edinburgh on Saturday, 17th January, calling for an end to imperialism, repression, and the ongoing violence in Palestine",
+        "fullDescription": "Thousand Madleens to Gaza (UK) will be joining the National Demonstration in Edinburgh on Saturday, 17th January, calling for an end to imperialism, repression, and the ongoing violence in Palestine.\n\nWe will assemble at Johnston Terrace at 1 PM and march to the Scottish Parliament in solidarity with those fighting for justice and liberation. Join us as we stand united against oppression and show our commitment to global human rights",
+        "shareMessage": "Join Thousand Madleens to Gaza UK at the National Demonstration for Palestine.",
+        "eventType": "Fundraiser",
+        "image": "/images/events/scot_national.jpg"
+      },
+
+      {
+        "id": 2,
         "slug": "gaza-sunbirds-comedy",
         "title": "Gaza Sunbirds Festival of Comedy",
         "location": "Union Chapel, London",
@@ -55,7 +68,7 @@
         "image": "/images/events/sunbirds.jpg"
       },
       {
-        "id": 2,
+        "id": 3,
         "slug": "birmingham-flotilla-launch",
         "title": "Flotilla Launch",
         "location": "The Old Print Works, 498-506 Moseley Rd, Balsall Heath, Birmingham",
@@ -68,7 +81,7 @@
         "image": "/images/events/flotilla-launch.jpeg"
       },
       {
-        "id": 3,
+        "id": 4,
         "slug": "national-march-jan-2026",
         "title": "National Demonstration",
         "location": "London",
