@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -16,6 +16,7 @@ import { ShareModal } from "@/components/share-modal";
 import Link from "next/link";
 import Image from "next/image";
 import { AddToCalendarButton } from "add-to-calendar-button-react";
+import { useRouter } from "next/navigation";
 
 // Event type badge themes (matching events-section.tsx)
 const eventThemes = {
@@ -53,10 +54,23 @@ interface EventDetailPageProps {
 
 export default function EventDetailPage({ event, content }: EventDetailPageProps) {
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
+  const [backUrl, setBackUrl] = useState("/#events");
+  const router = useRouter();
   const theme = eventThemes[event.eventType as keyof typeof eventThemes] || eventThemes["Community"];
 
   // Use home page banner for hero
   const heroBannerImage = "/images/thousand-madleens-banner.jpg";
+
+  // Determine back URL based on referrer
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const referrer = document.referrer;
+      // If came from /events page, go back there; otherwise go to home #events
+      if (referrer && referrer.includes("/events") && !referrer.includes("/events/")) {
+        setBackUrl("/events");
+      }
+    }
+  }, []);
 
   // Format date and time for display from ISO datetime
   const formatDate = (dateTime: string) => {
@@ -264,7 +278,7 @@ export default function EventDetailPage({ event, content }: EventDetailPageProps
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
         >
-          <Link href="/#events">
+          <Link href={backUrl}>
             <Button variant="outline" className="border-green-600 text-green-600 hover:bg-green-50">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to All Events

@@ -278,6 +278,19 @@ export default function EventsSection({ content = defaultContent }: EventsSectio
               </span>
             </div>
           )}
+
+          {/* View All Events Button */}
+          <div className="text-center mt-8">
+            <Link href="/events">
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-green-600 text-green-600 hover:bg-green-50 px-8 py-4"
+              >
+                View All Events
+              </Button>
+            </Link>
+          </div>
         </motion.div>
       </div>
     </section>
