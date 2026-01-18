@@ -79,13 +79,25 @@ export default function EventsSection({ content = defaultContent }: EventsSectio
     });
   };
 
+  // Filter out events that are more than 24 hours in the past
+  const upcomingEvents = events.filter((event: any) => {
+    if (!event.dateTime) return true; // Keep events without dateTime
+
+    const eventDate = new Date(event.dateTime);
+    const now = new Date();
+    const hoursSinceEvent = (now.getTime() - eventDate.getTime()) / (1000 * 60 * 60);
+
+    // Keep event if it's less than 24 hours in the past or in the future
+    return hoursSinceEvent < 24;
+  });
+
   // Split events into sets of 3
   const eventsPerSet = 3;
-  const totalSets = Math.ceil(events.length / eventsPerSet);
+  const totalSets = Math.ceil(upcomingEvents.length / eventsPerSet);
 
   const getCurrentEvents = () => {
     const start = currentSet * eventsPerSet;
-    return events.slice(start, start + eventsPerSet);
+    return upcomingEvents.slice(start, start + eventsPerSet);
   };
 
   const nextSet = () => {
