@@ -194,12 +194,12 @@ export default function EventDetailPage({ event, content }: EventDetailPageProps
         {/* Action Buttons */}
         <div className="mb-8 flex flex-wrap items-center justify-between gap-4">
           <div className="flex flex-wrap gap-3">
-            {/* Get Tickets Button - Only if ticketsUrl exists */}
-            {event.ticketsUrl && (
-              <Link href={event.ticketsUrl} target="_blank">
+            {/* Action Button - Only if actionUrl exists */}
+            {event.actionUrl && (
+              <Link href={event.actionUrl} target="_blank">
                 <Button className="bg-green-600 hover:bg-green-700 text-white">
                   <ExternalLink className="mr-2 h-4 w-4" />
-                  Get Tickets
+                  {event.actionText || 'Learn More'}
                 </Button>
               </Link>
             )}

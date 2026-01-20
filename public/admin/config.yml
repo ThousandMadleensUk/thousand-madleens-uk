@@ -10,283 +10,47 @@ backend:
 local_backend: true
 
 media_folder: "/public/images"
-public_folder: "/public"
+public_folder: "/images"
 
-# Enable preview - load actual site in iframe
+# Enable preview
 show_preview_links: true
 
 collections:
-  - name: "config"
-    label: "Site Configuration"
+  - name: "content"
+    label: "Events"
     files:
-      - label: "Content"
+      - label: "Events"
         name: "content"
         file: "content.json"
         fields:
-          # Site Settings
-          - label: "Site Settings"
-            name: "site"
-            widget: "object"
-            fields:
-              - { label: "Site Title", name: "title", widget: "string" }
-              - { label: "Site Description", name: "description", widget: "text" }
-              - { label: "Campaign Message", name: "campaignMessage", widget: "text", hint: "Used in social media sharing" }
-
-          # Navigation
-          - label: "Navigation"
-            name: "navigation"
-            widget: "object"
-            fields:
-              - label: "Logo"
-                name: "logo"
-                widget: "object"
-                fields:
-                  - { label: "Logo Image", name: "src", widget: "image" }
-                  - { label: "Logo Alt Text", name: "alt", widget: "string" }
-              - label: "Menu Items"
-                name: "menuItems"
-                widget: "list"
-                fields:
-                  - { label: "Label", name: "label", widget: "string" }
-                  - { label: "Link", name: "href", widget: "string" }
-              - label: "Header Buttons"
-                name: "buttons"
-                widget: "list"
-                fields:
-                  - { label: "Label", name: "label", widget: "string" }
-                  - { label: "Short Label (Mobile)", name: "shortLabel", widget: "string", required: false }
-                  - { label: "Link", name: "href", widget: "string" }
-                  - { label: "Style", name: "style", widget: "select", options: ["primary", "outline"] }
-
-          # Hero Section
-          - label: "Hero Section"
-            name: "hero"
-            widget: "object"
-            fields:
-              - label: "Background Image"
-                name: "backgroundImage"
-                widget: "object"
-                fields:
-                  - { label: "Image", name: "src", widget: "image" }
-                  - { label: "Alt Text", name: "alt", widget: "string" }
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Subtitle", name: "subtitle", widget: "string" }
-              - { label: "Tagline", name: "tagline", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-              - label: "Call-to-Action Buttons"
-                name: "buttons"
-                widget: "list"
-                fields:
-                  - { label: "Label", name: "label", widget: "string" }
-                  - { label: "Link", name: "href", widget: "string" }
-                  - { label: "Icon", name: "icon", widget: "string", hint: "Lucide icon name from: https://lucide.dev/icons/" }
-                  - { label: "Style", name: "style", widget: "select", options: ["primary", "outline"] }
-
-          # Mission Section
-          - label: "Mission Section"
-            name: "mission"
-            widget: "object"
-            fields:
-              - label: "Mission Cards"
-                name: "cards"
-                widget: "list"
-                fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Icon", name: "icon", widget: "string", hint: "Lucide icon name from: https://lucide.dev/icons/" }
-                  - { label: "Description", name: "description", widget: "text", hint: "Use \\n\\n to separate paragraphs" }
-
-          # Goals Section
-          - label: "Goals Section"
-            name: "goals"
-            widget: "object"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-              - label: "Goal Items"
-                name: "items"
-                widget: "list"
-                fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Icon", name: "icon", widget: "string", hint: "Lucide icon name from: https://lucide.dev/icons/" }
-                  - { label: "Description", name: "description", widget: "text" }
-
-          # Get Involved Section
-          - label: "Get Involved Section"
-            name: "getInvolved"
-            widget: "object"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-              - { label: "Campaign ID", name: "campaignId", widget: "number", hint: "Chuffed campaign ID (e.g., 143268)" }
-              - label: "Join Delegation"
-                name: "joinDelegation"
-                widget: "object"
-                fields:
-                  - { label: "Title", name: "title", widget: "string", hint: "Not displayed on site, for CMS organization only" }
-                  - label: "Bullet Points"
-                    name: "points"
-                    widget: "list"
-                    field: { label: "Point", name: "point", widget: "text" }
-                  - { label: "Button Text", name: "buttonText", widget: "string" }
-                  - { label: "Button URL", name: "buttonUrl", widget: "string", hint: "Link to signup form" }
-
-          # Events Section
           - label: "Events Section"
             name: "events"
             widget: "object"
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "Section Description", name: "description", widget: "text" }
               - label: "Events"
                 name: "events"
                 widget: "list"
                 fields:
-                  - { label: "Event ID", name: "id", widget: "number" }
-                  - { label: "URL Slug", name: "slug", widget: "string", hint: "⚠️ WARNING: Changing this will change the event URL. Use lowercase with dashes (e.g., national-march-jan-2026)" }
+                  - { label: "URL Slug", name: "slug", widget: "string", hint: "URL-friendly identifier (e.g., national-march-jan-2026). Changing this changes the event URL." }
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Location", name: "location", widget: "string" }
-                  - { label: "Date & Time", name: "dateTime", widget: "datetime", hint: "Select start date and time for the event", format: "YYYY-MM-DDTHH:mm" }
-                  - { label: "End Time", name: "endTime", widget: "string", hint: "Event end time in 24-hour format (e.g., 15:00 for 3 PM)" }
-                  - { label: "Short Description", name: "shortDescription", widget: "text", hint: "Brief description for event card (2-3 sentences)" }
-                  - { label: "Full Description", name: "fullDescription", widget: "text", hint: "Detailed description for event detail page. Use line breaks for paragraphs." }
-                  - { label: "Share Message", name: "shareMessage", widget: "text", required: false, hint: "Custom message for social media sharing. If empty, will use the short description. Keep under 200 characters for best results." }
-                  - { label: "Image URL", name: "image", widget: "string" }
-                  - { label: "Tickets URL", name: "ticketsUrl", widget: "string", required: false, hint: "Optional: Link to ticket/registration page for this event" }
+                  - { label: "Date & Time", name: "dateTime", widget: "datetime", format: "YYYY-MM-DDTHH:mm" }
+                  - { label: "End Time", name: "endTime", widget: "string", hint: "24-hour format (e.g., 18:00)" }
+                  - { label: "Short Description", name: "shortDescription", widget: "text", hint: "Brief description for event cards (2-3 sentences)" }
+                  - { label: "Full Description", name: "fullDescription", widget: "text", hint: "Detailed description for event page. Use line breaks for paragraphs." }
+                  - { label: "Share Message", name: "shareMessage", widget: "text", required: false, hint: "Custom social media message. Keep under 200 characters." }
+                  - { label: "Event Image", name: "image", widget: "image" }
+                  - { label: "Action Button URL", name: "actionUrl", widget: "string", required: false, hint: "Link to tickets, registration, or more info" }
+                  - { label: "Action Button Text", name: "actionText", widget: "string", required: false, default: "Learn More", hint: "Button text (e.g., 'Get Tickets', 'Register Now')" }
                   - label: "Event Type"
                     name: "eventType"
                     widget: "select"
-                    hint: "Selects badge and coordinated colors"
+                    hint: "Determines badge color"
                     options:
                       - { label: "Protest (Red)", value: "Protest" }
                       - { label: "Fundraiser (Green)", value: "Fundraiser" }
                       - { label: "Meeting (Blue)", value: "Meeting" }
                       - { label: "Workshop (Purple)", value: "Workshop" }
                       - { label: "Community Event (Orange)", value: "Community" }
-
-          # Press Release
-          - label: "Press Release"
-            name: "pressRelease"
-            widget: "object"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Subtitle", name: "subtitle", widget: "string" }
-              - { label: "Date", name: "date", widget: "string" }
-              - label: "Announcement"
-                name: "announcement"
-                widget: "object"
-                fields:
-                  - { label: "Announcement Title", name: "title", widget: "string" }
-                  - { label: "Launch Date", name: "launchDate", widget: "string" }
-                  - { label: "Location", name: "location", widget: "string" }
-                  - { label: "Description", name: "description", widget: "text" }
-                  - label: "Content Sections"
-                    name: "sections"
-                    widget: "list"
-                    fields:
-                      - { label: "Section Title", name: "title", widget: "string", required: false }
-                      - { label: "Content", name: "content", widget: "text" }
-                  - label: "Media Contacts"
-                    name: "mediaContacts"
-                    widget: "list"
-                    fields:
-                      - { label: "Name", name: "name", widget: "string" }
-                      - { label: "Email", name: "email", widget: "string" }
-                      - { label: "Phone", name: "phone", widget: "string", required: false }
-                      - { label: "Organization", name: "organization", widget: "string" }
-                  - label: "Websites"
-                    name: "websites"
-                    widget: "list"
-                    field: { label: "Website URL", name: "url", widget: "string" }
-                  - { label: "Call to Action", name: "callToAction", widget: "text" }
-                  - label: "Key Messages"
-                    name: "keyMessages"
-                    widget: "list"
-                    field: { label: "Message", name: "message", widget: "string" }
-
-          # Social Media
-          - label: "Social Media"
-            name: "socialMedia"
-            widget: "object"
-            fields:
-              - { label: "Section Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-              - label: "Social Platforms"
-                name: "platforms"
-                widget: "list"
-                fields:
-                  - { label: "Platform Name", name: "name", widget: "string" }
-                  - { label: "Icon", name: "icon", widget: "string", hint: "Icon component name" }
-                  - { label: "Link", name: "href", widget: "string" }
-                  - { label: "Description", name: "description", widget: "string" }
-                  - { label: "Color Class", name: "color", widget: "string" }
-              - label: "Share Section"
-                name: "shareSection"
-                widget: "object"
-                fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - label: "Share Buttons"
-                    name: "buttons"
-                    widget: "list"
-                    fields:
-                      - { label: "Label", name: "label", widget: "string" }
-                      - { label: "Short Label", name: "shortLabel", widget: "string", required: false }
-                      - { label: "Icon", name: "icon", widget: "string" }
-                      - { label: "Action", name: "action", widget: "string", required: false, hint: "copy, email, or leave blank for link" }
-                      - { label: "Link", name: "href", widget: "string", required: false }
-
-          # Disclaimer
-          - label: "Disclaimer"
-            name: "disclaimer"
-            widget: "object"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Subtitle", name: "subtitle", widget: "string" }
-              - { label: "Icon", name: "icon", widget: "string", default: "AlertTriangle" }
-              - label: "Disclaimer Points"
-                name: "points"
-                widget: "list"
-                fields:
-                  - { label: "Point Title", name: "title", widget: "string" }
-                  - { label: "Description", name: "description", widget: "text" }
-
-          # Footer
-          - label: "Footer"
-            name: "footer"
-            widget: "object"
-            fields:
-              - label: "Logo"
-                name: "logo"
-                widget: "object"
-                fields:
-                  - { label: "Logo Image", name: "src", widget: "image" }
-                  - { label: "Alt Text", name: "alt", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-              - label: "Footer Sections"
-                name: "sections"
-                widget: "list"
-                fields:
-                  - { label: "Section Title", name: "title", widget: "string" }
-                  - label: "Links"
-                    name: "links"
-                    widget: "list"
-                    fields:
-                      - { label: "Label", name: "label", widget: "string" }
-                      - { label: "Link", name: "href", widget: "string" }
-              - label: "Social Links"
-                name: "socialLinks"
-                widget: "list"
-                fields:
-                  - { label: "Platform", name: "platform", widget: "string" }
-                  - { label: "Link", name: "href", widget: "string" }
-                  - { label: "Icon", name: "icon", widget: "string" }
-              - label: "Copyright"
-                name: "copyright"
-                widget: "object"
-                fields:
-                  - { label: "Copyright Text", name: "text", widget: "string" }
-                  - label: "Footer Links"
-                    name: "links"
-                    widget: "list"
-                    fields:
-                      - { label: "Label", name: "label", widget: "string" }
-                      - { label: "Link", name: "href", widget: "string" }
