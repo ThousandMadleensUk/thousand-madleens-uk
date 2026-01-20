@@ -9,8 +9,8 @@ backend:
 # For local development with GitHub backend
 local_backend: true
 
-media_folder: "/public/images"
-public_folder: "/images"
+media_folder: "/public/images/events"
+public_folder: "/images/events"
 
 # Enable preview
 show_preview_links: true
