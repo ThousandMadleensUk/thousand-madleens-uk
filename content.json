@@ -20,77 +20,6 @@
       }
     ]
   },
-  "getInvolved": {
-    "title": "Get Involved",
-    "description": "Sailing in Spring 2026. Support our mission by donating or join the UK delegation to help organize boats breaking Israel's siege on Gaza.",
-    "campaignId": 143268,
-    "joinDelegation": {
-      "title": "Join the UK Delegation",
-      "points": [
-        "Whether you're living in the UK, have ties here, or want to help out from afar - we welcome you",
-        "Join us in organising boats heading towards Gaza in spring 2026.",
-        "If have notable skills or simply commitment to the cause, there's a place for you."
-      ],
-      "buttonText": "Join the UK Delegation",
-      "buttonUrl": "https://cryptpad.fr/form/#/2/form/view/QYfOjHYWJnKMP6FvG2ghlcNLH2MDB8UUrgz0yKRiuhQ/"
-    }
-  },
-  "events": {
-    "title": "Upcoming Events",
-    "description": "Join us at events across the UK as we prepare for the Spring 2026 flotilla.",
-    "events": [
-      {
-        "slug": "gaza-sunbirds-comedy",
-        "title": "Gaza Sunbirds Festival of Comedy",
-        "location": "Union Chapel, London",
-        "dateTime": "2026-01-15T18:30",
-        "endTime": "23:00",
-        "actionUrl": "https://www.tickettailor.com/events/gazasunbirds1/1979329",
-        "actionText": "Get Tickets",
-        "shortDescription": "Join us for a night of comedy raising funds for Gaza Sunbirds, with proceeds going toward humanitarian aid and the a Sunbirds boat as part of the 1000 Madleens flotilla.",
-        "fullDescription": "Line up: Ivo Graham, Amir El-Masry, Fatiha El-Ghorri, Karl Porter, Finlay Christie, Thomas Green, Tez Ilyas, Sami Abu Wardeh, Sukina Noor (poem)\n\nThis January, Palestine's para-cycling team, the Gaza Sunbirds, will bring London crowds together for an evening of comedy and poetry in support of Palestine. With a lineup featuring Ivo Graham, Amir El-Masry, Fatiha El-Ghorri and Thomas Green, the squad of amputee athletes and their community have programmed a very special event at beloved Islington venue, Union Chapel.\n\nThe Gaza Sunbirds have gained global recognition over the last two years for their courageous aid missions in the strip. The team formed in 2020 with a dream of representing Palestine on the sporting world stage. Forced to give up their training regime in 2023 due to the Israeli bombardment, they turned their attention to supporting their local community. Since then, they have been risking their lives on one leg to distribute $520,000+ USD worth of food and supplies in Southern and central Gaza. The show will fundraise for their work in the strip as well as international goals such as entering Palestine's first para-cyclists to the LA 2028 Paralympics. A portion of the proceeds will also go to Thousand Madleens to Gaza, a citizen led initiative aiming to break the siege on Gaza.\n\n*This event is for 16+, under 18s must be accompanied by an adult",
-        "shareMessage": "Join us for an evening of comedy supporting Palestinian freedom and the Gaza Sunbirds! Get your tickets now.",
-        "eventType": "Fundraiser",
-        "image": "/images/events/sunbirds.jpg"
-      },
-      {
-        "slug": "scot-national-demo",
-        "title": "National Demonstration for Palestine",
-        "location": "Edinburgh",
-        "dateTime": "2026-01-17T13:00",
-        "endTime": "18:00",
-        "shortDescription": "Thousand Madleens to Gaza (UK) will be joining the National Demonstration in Edinburgh on Saturday, 17th January, calling for an end to imperialism, repression, and Israel's ongoing genocide in Palestine",
-        "fullDescription": "Thousand Madleens to Gaza (UK) will be joining the National Demonstration in Edinburgh on Saturday, 17th January, calling for an end to imperialism, repression, and Israel's ongoing genocide in Palestine.\n\nWe will assemble at Johnston Terrace at 1 PM and march to the Scottish Parliament in solidarity with those fighting for justice and liberation. Join us as we stand united against Israeli oppression and show our commitment to global human rights",
-        "shareMessage": "Join Thousand Madleens to Gaza UK at the National Demonstration for Palestine.",
-        "eventType": "Protest",
-        "image": "/images/events/scot_national.jpg"
-      },
-      {
-        "slug": "birmingham-flotilla-launch",
-        "title": "Flotilla Launch",
-        "location": "The Old Print Works, 498-506 Moseley Rd, Balsall Heath, Birmingham",
-        "dateTime": "2026-01-25T17:30",
-        "endTime": "20:30",
-        "shortDescription": "TMTG UK & Activist Independent Movement present an evening of live speakers and inspiring acts to launch the 2026 Flotilla. Featuring speakers Leigh Cadno and Shaykh Asrar and more.",
-        "fullDescription": "Thousand Madleens UK & Activist Independent Movement present an evening of testimony and storytelling featuring Scholar Shaykh Asrar, firsthand accounts from flotilla crew members, stories of the Gaza Sunbirds, and photojournalism from Palestine.\nSpeakers and more:\n\n- Shaykh Asrar\n- Photojournalism and stories of Palestinian people\n- Stories of the Gaza Sunbirds\n- Thousand Madleens to Gaza\n- Leigh Cadno, Uzma Usmani, Sijaad and others share their Flotilla experiences\n\nPerformances from Blod, Charles, and more to be announced.",
-        "shareMessage": "Be part of the historic 2026 Flotilla launch in Birmingham! Join us for inspiring speakers and more.",
-        "eventType": "Fundraiser",
-        "image": "/images/events/flotilla-launch.jpeg"
-      },
-      {
-        "slug": "national-march-jan-2026",
-        "title": "National Demonstration",
-        "location": "London",
-        "dateTime": "2026-01-31T12:00",
-        "endTime": "18:00",
-        "shortDescription": "Israel's genocide against the Palestinian people has not ended. Join the TMTG block at the national march for Palestine to demand our government end its complicity in Israel's genocide.",
-        "fullDescription": "END THE GENOCIDE – HANDS OFF GAZA – STOP ARMING ISRAEL\n\nIsrael's genocide against the Palestinian people has not ended. Join the TMTG block at the national march for Palestine to demand our government end its complicity in Israel's genocide.\n\nJoin us on Saturday 31 January for the first national march for Palestine in 2026. Assemble 12 noon in Central London.",
-        "shareMessage": "Stand with Palestine on January 31st! Join the national demonstration in London to end the genocide.",
-        "eventType": "Protest",
-        "image": "/images/events/national-demo.jpg"
-      }
-    ]
-  },
   "pressRelease": {
     "title": "Official Press Release",
     "subtitle": "Freedom Flotilla Coalition & Thousand Madleens to Gaza Unite",
@@ -253,6 +182,62 @@
       ]
     }
   },
+  "events": {
+    "title": "Upcoming Events",
+    "description": "Join us at events across the UK as we prepare for the Spring 2026 flotilla.",
+    "events": [
+      {
+        "shortDescription": "Join us for a night of comedy raising funds for Gaza Sunbirds, with proceeds going toward humanitarian aid and the a Sunbirds boat as part of the 1000 Madleens flotilla.",
+        "actionText": "Get Tickets",
+        "endTime": "23:00",
+        "shareMessage": "Join us for an evening of comedy supporting Palestinian freedom and the Gaza Sunbirds! Get your tickets now.",
+        "slug": "gaza-sunbirds-comedy",
+        "fullDescription": "Line up: Ivo Graham, Amir El-Masry, Fatiha El-Ghorri, Karl Porter, Finlay Christie, Thomas Green, Tez Ilyas, Sami Abu Wardeh, Sukina Noor (poem)\n\nThis January, Palestine's para-cycling team, the Gaza Sunbirds, will bring London crowds together for an evening of comedy and poetry in support of Palestine. With a lineup featuring Ivo Graham, Amir El-Masry, Fatiha El-Ghorri and Thomas Green, the squad of amputee athletes and their community have programmed a very special event at beloved Islington venue, Union Chapel.\n\nThe Gaza Sunbirds have gained global recognition over the last two years for their courageous aid missions in the strip. The team formed in 2020 with a dream of representing Palestine on the sporting world stage. Forced to give up their training regime in 2023 due to the Israeli bombardment, they turned their attention to supporting their local community. Since then, they have been risking their lives on one leg to distribute $520,000+ USD worth of food and supplies in Southern and central Gaza. The show will fundraise for their work in the strip as well as international goals such as entering Palestine's first para-cyclists to the LA 2028 Paralympics. A portion of the proceeds will also go to Thousand Madleens to Gaza, a citizen led initiative aiming to break the siege on Gaza.\n\n*This event is for 16+, under 18s must be accompanied by an adult",
+        "eventType": "Fundraiser",
+        "location": "Union Chapel, London",
+        "title": "Gaza Sunbirds Festival of Comedy",
+        "actionUrl": "https://www.tickettailor.com/events/gazasunbirds1/1979329",
+        "image": "/images/events/sunbirds.jpg",
+        "dateTime": "2026-01-15T18:30"
+      },
+      {
+        "shortDescription": "Thousand Madleens to Gaza (UK) will be joining the National Demonstration in Edinburgh on Saturday, 17th January, calling for an end to imperialism, repression, and Israel's ongoing genocide in Palestine",
+        "endTime": "18:00",
+        "shareMessage": "Join Thousand Madleens to Gaza UK at the National Demonstration for Palestine.",
+        "slug": "scot-national-demo",
+        "fullDescription": "Thousand Madleens to Gaza (UK) will be joining the National Demonstration in Edinburgh on Saturday, 17th January, calling for an end to imperialism, repression, and Israel's ongoing genocide in Palestine.\n\nWe will assemble at Johnston Terrace at 1 PM and march to the Scottish Parliament in solidarity with those fighting for justice and liberation. Join us as we stand united against Israeli oppression and show our commitment to global human rights",
+        "eventType": "Protest",
+        "location": "Edinburgh",
+        "title": "National Demonstration for Palestine",
+        "image": "/images/events/scot_national.jpg",
+        "dateTime": "2026-01-17T13:00"
+      },
+      {
+        "shortDescription": "TMTG UK & Activist Independent Movement present an evening of live speakers and inspiring acts to launch the 2026 Flotilla. Featuring speakers Leigh Cadno and Shaykh Asrar and more.",
+        "endTime": "20:30",
+        "shareMessage": "Be part of the historic 2026 Flotilla launch in Birmingham! Join us for inspiring speakers and more.",
+        "slug": "birmingham-flotilla-launch",
+        "fullDescription": "Thousand Madleens UK & Activist Independent Movement present an evening of testimony and storytelling featuring Shaykh Asrar, firsthand accounts from flotilla crew members, stories of the Gaza Sunbirds, and photojournalism from Palestine.\nSpeakers and more:\n\n- Shaykh Asrar\n- Photojournalism and stories of Palestinian people\n- Stories of the Gaza Sunbirds\n- Thousand Madleens to Gaza\n- Leigh Cadno, Uzma Usmani, Sijaad and others share their Flotilla experiences\n\nPerformances from Blod, Charles, and more to be announced.",
+        "eventType": "Fundraiser",
+        "location": "The Old Print Works, 498-506 Moseley Rd, Balsall Heath, Birmingham",
+        "title": "Flotilla Launch",
+        "image": "/images/events/flotilla-launch.jpeg",
+        "dateTime": "2026-01-25T17:30"
+      },
+      {
+        "shortDescription": "Israel's genocide against the Palestinian people has not ended. Join the TMTG block at the national march for Palestine to demand our government end its complicity in Israel's genocide.",
+        "endTime": "18:00",
+        "shareMessage": "Stand with Palestine on January 31st! Join the national demonstration in London to end the genocide.",
+        "slug": "national-march-jan-2026",
+        "fullDescription": "END THE GENOCIDE – HANDS OFF GAZA – STOP ARMING ISRAEL\n\nIsrael's genocide against the Palestinian people has not ended. Join the TMTG block at the national march for Palestine to demand our government end its complicity in Israel's genocide.\n\nJoin us on Saturday 31 January for the first national march for Palestine in 2026. Assemble 12 noon in Central London.",
+        "eventType": "Protest",
+        "location": "London",
+        "title": "National Demonstration",
+        "image": "/images/events/national-demo.jpg",
+        "dateTime": "2026-01-31T12:00"
+      }
+    ]
+  },
   "hero": {
     "backgroundImage": {
       "src": "/images/thousand-madleens-banner.jpg",
@@ -377,5 +362,20 @@
         "description": "Participation in this campaign is voluntary and at your own risk. The campaign organizers cannot be held responsible for individual decisions or consequences."
       }
     ]
+  },
+  "getInvolved": {
+    "title": "Get Involved",
+    "description": "Sailing in Spring 2026. Support our mission by donating or join the UK delegation to help organize boats breaking Israel's siege on Gaza.",
+    "campaignId": 143268,
+    "joinDelegation": {
+      "title": "Join the UK Delegation",
+      "points": [
+        "Whether you're living in the UK, have ties here, or want to help out from afar - we welcome you",
+        "Join us in organising boats heading towards Gaza in spring 2026.",
+        "If have notable skills or simply commitment to the cause, there's a place for you."
+      ],
+      "buttonText": "Join the UK Delegation",
+      "buttonUrl": "https://cryptpad.fr/form/#/2/form/view/QYfOjHYWJnKMP6FvG2ghlcNLH2MDB8UUrgz0yKRiuhQ/"
+    }
   }
 }
