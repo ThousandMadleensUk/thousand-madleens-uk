@@ -235,6 +235,20 @@
         "title": "National Demonstration",
         "image": "/images/events/national-demo.jpg",
         "dateTime": "2026-01-31T12:00"
+      },
+      {
+        "shortDescription": "In conversation with Leigh Cadno, sharing his eyewitness accounts of the Thousand Madleens Flotilla which challenged the siege of Gaza.",
+        "actionText": "Sign up here",
+        "endTime": "23:00",
+        "shareMessage": "Join us for an important evening of Resistance & Reflections on Palestinian Liberation. In coversation with Leigh Cadno, sharing his eyewitness accounts of the Thousand Madleens Flotilla which challenged the siege of Gaza.",
+        "slug": "resistance-reflections-leigh-cadno",
+        "fullDescription": "In Conversation with Leigh Cadno📢  You’re Invited!\n\nJoin us for an important evening of Resistance & Reflections on Palestinian Liberation 🇵🇸\n\n🗣 In conversation with Leigh Cadno, sharing powerful eye-witness reflections from the Thousand Madleens Flotilla that challenged the siege of Gaza.\n\n🎤 Hosted by: Abdullah Okud – Social Justice Campaigner",
+        "eventType": "Meeting",
+        "location": "Abbeyfield House, Abbeyfield Road, Sheffield",
+        "title": "Resistance & Reflections on Palestinian Liberation: In Conversation with Leigh Cadno",
+        "actionUrl": "https://shorturl.at/EKHE3",
+        "image": "/images/events/resistance-reflections.jpeg",
+        "dateTime": "2026-01-24T19:00"
       }
     ]
   },
