@@ -79,17 +79,22 @@ export default function EventsSection({ content = defaultContent }: EventsSectio
     });
   };
 
-  // Filter out events that are more than 24 hours in the past
-  const upcomingEvents = events.filter((event: any) => {
-    if (!event.dateTime) return true; // Keep events without dateTime
+  // Filter out events that are more than 24 hours in the past and sort by date ascending
+  const upcomingEvents = events
+    .filter((event: any) => {
+      if (!event.dateTime) return true; // Keep events without dateTime
 
-    const eventDate = new Date(event.dateTime);
-    const now = new Date();
-    const hoursSinceEvent = (now.getTime() - eventDate.getTime()) / (1000 * 60 * 60);
+      const eventDate = new Date(event.dateTime);
+      const now = new Date();
+      const hoursSinceEvent = (now.getTime() - eventDate.getTime()) / (1000 * 60 * 60);
 
-    // Keep event if it's less than 24 hours in the past or in the future
-    return hoursSinceEvent < 24;
-  });
+      // Keep event if it's less than 24 hours in the past or in the future
+      return hoursSinceEvent < 24;
+    })
+    .sort((a: any, b: any) => {
+      // Sort by dateTime ascending (soonest first)
+      return new Date(a.dateTime).getTime() - new Date(b.dateTime).getTime();
+    });
 
   // Split events into sets of 3
   const eventsPerSet = 3;
