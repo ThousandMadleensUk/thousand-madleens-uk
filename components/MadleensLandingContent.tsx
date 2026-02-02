@@ -150,9 +150,11 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
               <p className="text-xl md:text-2xl lg:text-3xl drop-shadow-lg mb-8">
                 {content.hero.tagline}
               </p>
-              <p className="text-lg md:text-xl text-gray-200 mb-12 leading-relaxed max-w-3xl mx-auto">
-                {content.hero.description}
-              </p>
+              <div className="text-lg md:text-xl text-gray-200 mb-12 leading-relaxed max-w-3xl mx-auto space-y-4">
+                {content.hero.description.split('\n\n').map((paragraph: string, index: number) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
+              </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
                 {content.hero.buttons.map((button: any, index: number) => {
                   const IconComponent =
@@ -298,14 +300,14 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
             </div>
 
             {/* Two-column grid on desktop, stacked on mobile */}
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 items-stretch">
               {/* Campaign Progress Card */}
-              <div>
+              <div className="h-full">
                 <CampaignProgress campaignId={content.getInvolved.campaignId} />
               </div>
 
               {/* Join UK Delegation Card */}
-              <div className="bg-white rounded-lg border-2 border-green-200 shadow-lg p-6 flex flex-col">
+              <div className="bg-white rounded-lg border-2 border-green-200 shadow-lg p-6 flex flex-col h-full">
                 <h3 className="text-2xl font-bold text-black mb-6 text-center">Join Us</h3>
                 <div className="space-y-4 mb-6 flex-grow">
                   {content.getInvolved.joinDelegation.points.map((point: any, index: number) => (

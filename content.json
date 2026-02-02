@@ -1,22 +1,22 @@
 {
   "goals": {
     "title": "How Your Donations Help",
-    "description": "Your support directly funds boats, equipment, and training for the UK delegation's contribution to the Spring 2026 flotilla.",
+    "description": "Your support allows us to sail by directly funding boats, equipment, and training for the UK delegation's contribution to the Spring 2026 flotilla.",
     "items": [
       {
         "title": "Boats & Equipment",
         "icon": "Ship",
-        "description": "Acquire and equip boats for the flotilla. Cover repairs, safety checks, GPS, communications, cameras, and essential maritime equipment needed for the journey to Gaza."
+        "description": "Acquire and equip boats for the flotilla. Cover repairs, safety checks, GPS, communications, cameras, and essential maritime equipment needed to open a people's sea corridor to Gaza."
       },
       {
         "title": "Training & Coordination",
         "icon": "Users",
-        "description": "Train and coordinate UK volunteers and crews. Provide safety gear, communication tools, and prepare departure logistics from European ports."
+        "description": "Train and coordinate UK volunteers and crews that will be sailing to Gaza. Provide safety gear, communication tools, and prepare departure logistics from European ports."
       },
       {
         "title": "International Solidarity",
         "icon": "Globe",
-        "description": "Contribute to the €3 million international fundraising target. The UK delegation is one of many worldwide working together to break Israel's illegal blockade."
+        "description": "Contribute to the €3 million international fundraising target. The UK delegation is a part of many civilian-led flotillas sailing together to break Israel's illegal blockade of Gaza."
       }
     ]
   },
@@ -92,12 +92,12 @@
       {
         "title": "UK Delegation's Role",
         "icon": "Ship",
-        "description": "We are UK-based medics, sailors, and grassroots organisers working as part of the international Thousand Madleens network.\n\nWe're raising funds to acquire boats, equipment, and training for the UK's contribution to the global flotilla sailing in Spring 2026."
+        "description": "We are UK-based medics, sailors, and grassroots organisers volunteering as part of the international Thousand Madleens network.\n\nWe're raising funds to acquire boats, equipment, and training for the UK's contribution to the global flotilla coalition sailing to Gaza in Spring 2026.\n\nTogether, we are acting in solidarity with Palestinians in the demand for justice, liberation and freedom."
       },
       {
         "title": "Why This Matters",
         "icon": "Megaphone",
-        "description": "The UK Government is an active and complicit partner in Israel's genocide. This makes it crucial that UK citizens object and raise the alarm internationally.\n\nWe stand on the right side of history. Together, we're organizing to show the world that the people demand justice for Palestine."
+        "description": "The UK Government is an active and complicit partner in Israel's genocide.\n\n It is crucial that UK citizens take action by demanding that our government, media, corporations, and institutions end their fuelling and enabling of Israel's genocide.\n\n It is our duty to oppose Israel's illegal blockade and support non-violent missions that raise the alarm internationally."
       }
     ]
   },
@@ -249,6 +249,48 @@
         "actionUrl": "https://shorturl.at/EKHE3",
         "image": "/images/events/resistance-reflections.jpeg",
         "dateTime": "2026-01-24T19:00"
+      },
+      {
+        "shortDescription": "Barrier to Bridge: a fundraising walk along the Thames with Palestinian tour guides from the Siraj Center in the West Bank, plus a symbolic model boat launch in Greenwich.",
+        "endTime": "17:00",
+        "shareMessage": "Join the Barrier to Bridge fundraising walk for Thousand Madleens on 8th February! Walk along the Thames with Palestinian guides from the West Bank.",
+        "slug": "barrier-to-bridge-walk-2026",
+        "fullDescription": "Barrier to Bridge: a fundraising walk along the Thames for the Thousand Madleens to Gaza flotilla.\n\nWe hope to be joined during the morning by Palestinian tour guides Nidal and George from the Siraj Center in the West Bank, who will share stories of life under occupation and Palestinian cultural heritage under threat.\n\nThe walk includes a symbolic model boat launch in Greenwich at noon.\n\nLong walk (11 miles): Meet at 9:30am at The View information centre by the Thames Barrier. Walk starts at 10am.\n\nShort walk (6 miles): Join at the Cutty Sark in Greenwich at around 12 noon for the model boat launch, then head off at 1pm.\n\nBoth routes end at Tower Bridge. The route is flat and on footpaths throughout.",
+        "eventType": "Fundraiser",
+        "location": "Thames Barrier to Tower Bridge, London",
+        "title": "Barrier to Bridge Walk",
+        "actionUrl": "/images/events/B2B 2026 Info.pdf",
+        "actionText": "More Details",
+        "image": "/images/events/thameswalk.jpg",
+        "dateTime": "2026-02-08T09:30"
+      },
+      {
+        "shortDescription": "Visit the Thousand Madleens stall at the Big Halal Lifestyle Expo Cardiff 2026. Meet flotilla crew members and hear firsthand accounts from Palestine.",
+        "endTime": "17:30",
+        "shareMessage": "Come see us at the Big Halal Lifestyle Expo Cardiff 2026! Meet flotilla crew and hear stories from Palestine.",
+        "slug": "halal-expo-cardiff-2026",
+        "fullDescription": "Visit the Thousand Madleens stall at the Big Halal Lifestyle Expo Cardiff 2026.\n\nFind us at Cardiff City Stadium where we'll be sharing a stall with a local activist Islamic charity. Meet flotilla crew members who will be sharing their experiences from the flotilla and their time in Palestine.\n\nThe expo is open to everyone - bring the whole family! Over 1,200 free parking spaces available for a stress-free arrival.\n\nPop by our stall, say hello, and grab yourself some TMTG merch - every purchase goes directly towards funding the flotilla.",
+        "eventType": "Community",
+        "location": "Cardiff City Stadium, Cardiff",
+        "title": "Big Halal Lifestyle Expo Cardiff 2026",
+        "actionUrl": "https://www.instagram.com/p/DTAcYTzDCNF/",
+        "actionText": "Event Info",
+        "image": "/images/events/bighalal.jpg",
+        "dateTime": "2026-02-08T11:00"
+      },
+      {
+        "shortDescription": "Join us for a Quiz Night at MILK Cafe, a social enterprise set up to empower and support refugee and migrant women living in Glasgow.",
+        "endTime": "22:00",
+        "shareMessage": "Join us for a Quiz Night at MILK Cafe in Glasgow!",
+        "slug": "quiz-night-milk-cafe-glasgow",
+        "fullDescription": "Join us for a Quiz Night at MILK Cafe in Glasgow!\n\nMILK is a social enterprise founded in 2014 to empower and support refugee and migrant women living in Glasgow.\n\nCome along for a fun evening of quizzing while supporting a great cause. We'll have TMTG merch available too - every purchase goes directly towards funding the flotilla.",
+        "eventType": "Fundraiser",
+        "location": "MILK Cafe, 378 Cathcart Road, Glasgow G42 7DF",
+        "title": "Quiz Night at MILK Cafe",
+        "actionUrl": "https://www.milkglasgow.com/",
+        "actionText": "Venue Details",
+        "image": "/images/events/milkcafe.png",
+        "dateTime": "2026-02-07T18:30"
       }
     ]
   },
@@ -257,10 +299,10 @@
       "src": "/images/thousand-madleens-banner.jpg",
       "alt": "Sailboat with Palestinian flag sailing on the Mediterranean Sea - Thousand Madleens to Gaza campaign"
     },
-    "title": "Thousand Madleens to Gaza UK Delegation",
-    "subtitle": "Breaking the Israeli Blockade",
+    "title": "Thousand Madleens to Gaza - UK Delegation",
+    "subtitle": "Breaking Israel's Illegal Blockade",
     "tagline": "1000 Ships. One Mission. Free Gaza.",
-    "description": "The UK delegation is part of an international citizen movement organizing a peaceful civilian flotilla to break Israel's illegal blockade on Gaza. Sailing Spring 2026 with boats from across the world to deliver aid and break the siege.",
+    "description": "The UK delegation is part of an international non-violent movement organising a civilian-led flotilla, aiming to break Israel's illegal blockade of Gaza. Sailing in Spring 2026 with boats from across the world coming together to open a people's sea corridor to Gaza.\n\n We demand that human rights bodies do not continue to wait for permission from the same genocidal state that is deliberately starving Palestinians to death. Israel has no legal jurisdiction over international waters or Palestinian territorial waters. \n\nTogether we sail in solidarity with Palestinians.",
     "buttons": [
       {
         "label": "DONATE",
@@ -379,14 +421,14 @@
   },
   "getInvolved": {
     "title": "Get Involved",
-    "description": "Sailing in Spring 2026. Support our mission by donating or join the UK delegation to help organize boats breaking Israel's siege on Gaza.",
+    "description": "We are sailing in Spring 2026 to break Israel's illegal blockade of Gaza. Support our non-violent mission by donating or join the UK delegation to organise and be a part of the team.",
     "campaignId": 143268,
     "joinDelegation": {
-      "title": "Join the UK Delegation",
+      "title": "Join Us",
       "points": [
-        "Whether you're living in the UK, have ties here, or want to help out from afar - we welcome you",
-        "Join us in organising boats heading towards Gaza in spring 2026.",
-        "If have notable skills or simply commitment to the cause, there's a place for you."
+        "Whether you're living in the UK, have ties here, or want to help out from afar - we welcome you.",
+        "Join us in organising boats sailing to Gaza in spring 2026.",
+        "If you have notable skills or are committed to supporting our non-violent movement, there's a place for you."
       ],
       "buttonText": "Join the UK Delegation",
       "buttonUrl": "https://cryptpad.fr/form/#/2/form/view/QYfOjHYWJnKMP6FvG2ghlcNLH2MDB8UUrgz0yKRiuhQ/"
