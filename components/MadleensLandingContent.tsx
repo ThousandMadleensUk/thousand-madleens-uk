@@ -339,6 +339,37 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
       {/* Press release component is available at: components/press-release.tsx */}
       {/* <PressRelease content={content} /> */}
 
+      {/* Partner Organisations */}
+      {content.partners && (
+        <section className="py-12 sm:py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <motion.div
+              className="max-w-5xl mx-auto"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <p className="text-sm sm:text-base text-gray-500 uppercase tracking-widest text-center mb-8 sm:mb-10">
+                {content.partners.title}
+              </p>
+              <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-10 sm:gap-x-14 sm:gap-y-12">
+                {content.partners.organisations.map((org: any, index: number) => (
+                  <motion.a key={index} href={org.url} target="_blank" rel="noopener noreferrer" className={`flex items-center justify-center ${org.darkBg ? 'bg-black rounded-lg p-2' : ''}`} whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={org.logo}
+                      alt={org.name}
+                      className={`object-contain h-14 sm:h-16 max-w-[120px] sm:max-w-[150px] ${org.rounded ? 'rounded-full border border-gray-200 p-1.5' : ''}`}
+                    />
+                  </motion.a>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </section>
+      )}
+
       {/* Social Media Section - Moved to Bottom */}
       <section className="py-8 sm:py-16 bg-black text-white">
         <div className="container mx-auto px-4">

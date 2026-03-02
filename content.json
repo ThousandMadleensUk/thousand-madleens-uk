@@ -294,6 +294,22 @@
       }
     ]
   },
+  "partners": {
+    "title": "In Collaboration With",
+    "organisations": [
+      { "name": "Freedom Flotilla Coalition", "logo": "/images/partners/freedom-flotilla-coalition.png", "url": "https://freedomflotilla.org/" },
+      { "name": "Gaza Sunbirds", "logo": "/images/partners/gaza-sunbirds.png", "url": "https://gazasunbirds.org/" },
+      { "name": "Friends of Al-Aqsa", "logo": "/images/partners/friends-of-al-aqsa.png", "url": "https://www.foa.org.uk/", "darkBg": true },
+      { "name": "Let's Talk", "logo": "/images/partners/lets-talk.svg", "url": "https://letstalkpalestine.com/" },
+      { "name": "Activist Independent Movement", "logo": "/images/partners/activist-independent-movement.png", "url": "https://www.instagram.com/activist.independent.movement/" },
+      { "name": "Camden Friends of Palestine", "logo": "/images/partners/camden-friends-of-palestine.png", "url": "https://linktr.ee/cfop" },
+      { "name": "HealthCare Workers 4 Palestine", "logo": "/images/partners/healthcare-workers-4-palestine.png", "url": "https://www.healthworkers4palestine.com/" },
+      { "name": "NFATs", "logo": "/images/partners/nfats.png", "url": "https://nfats1.wixsite.com/nfatscollective", "rounded": true },
+      { "name": "One State Palestine", "logo": "/images/partners/one-state-palestine.png", "url": "https://www.onestatepalestine.org/" },
+      { "name": "RBB", "logo": "/images/partners/rbb.png", "url": "https://refugeebiriyanibananas.org/" },
+      { "name": "United In Resistance", "logo": "/images/partners/united-in-resistance.png", "url": "https://unitedinresistance.co.uk/" }
+    ]
+  },
   "hero": {
     "backgroundImage": {
       "src": "/images/thousand-madleens-banner.jpg",
