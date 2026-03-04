@@ -291,6 +291,20 @@
         "actionText": "Venue Details",
         "image": "/images/events/milkcafe.png",
         "dateTime": "2026-02-07T18:30"
+      },
+      {
+        "shortDescription": "An evening of inspiring talks, music, and connection at the Old Library Eastville. Raising money for a landworkers' union boat to sail to Gaza and break the siege.",
+        "endTime": "22:00",
+        "shareMessage": "Join us at the Old Library Eastville for an evening of talks, music, and connection. Raising funds for a boat to Gaza!",
+        "slug": "old-library-eastville-march-2026",
+        "fullDescription": "Come to the Old Library Eastville, on Friday the 13th for an evening of inspiring talks, music, and connection to land and sea.\n\nJoin us for a raffle, hot food, and fireside sweetness.\n\nWe are the Thousand Madleens to Gaza, an international flotilla organisation. Raising money for an agricultural union boat, to sail to Gaza to break the siege, to represent, listen and speak with Palestinian farmers. To raise awareness and bring aid to the most steadfast and dedicated of landworkers.\n\nSeed Stories - Collective of seed storytellers\nLeigh Cadno - Retired Welsh nurse activist, aid worker and Flotilla member\nOlive Grinter - Folk Music\nScraggle Pot - Rinky Tinky Street Urchins\nAnd More\n\nDonation entry, look forward to seeing you there",
+        "eventType": "Fundraiser",
+        "location": "The Old Library, Eastville, Bristol",
+        "title": "Seas of Water, Seas of People",
+        "actionUrl": "https://www.headfirstbristol.co.uk/whats-on/the-old-library-muller-road-eastville-bs8-6uq/fri-13-mar-landworkers-to-gaza-149624",
+        "actionText": "Event Details",
+        "image": "/images/events/old-library-eastville.jpg",
+        "dateTime": "2026-03-13T18:30"
       }
     ]
   },
