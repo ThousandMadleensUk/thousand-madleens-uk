@@ -122,6 +122,11 @@
       {
         "label": "Get Involved",
         "href": "#get-involved"
+      },
+      {
+        "label": "Documentary",
+        "href": "https://www.youtube.com/watch?v=hiavQ-zZo6M",
+        "external": true
       }
     ],
     "buttons": [
@@ -309,20 +314,30 @@
     ]
   },
   "partners": {
-    "title": "In Collaboration With",
-    "organisations": [
-      { "name": "Freedom Flotilla Coalition", "logo": "/images/partners/freedom-flotilla-coalition.png", "url": "https://freedomflotilla.org/" },
-      { "name": "Gaza Sunbirds", "logo": "/images/partners/gaza-sunbirds.png", "url": "https://gazasunbirds.org/" },
-      { "name": "Friends of Al-Aqsa", "logo": "/images/partners/friends-of-al-aqsa.png", "url": "https://www.foa.org.uk/", "darkBg": true },
-      { "name": "Let's Talk", "logo": "/images/partners/lets-talk.svg", "url": "https://letstalkpalestine.com/" },
-      { "name": "Activist Independent Movement", "logo": "/images/partners/activist-independent-movement.png", "url": "https://www.instagram.com/activist.independent.movement/" },
-      { "name": "Camden Friends of Palestine", "logo": "/images/partners/camden-friends-of-palestine.png", "url": "https://linktr.ee/cfop" },
-      { "name": "HealthCare Workers 4 Palestine", "logo": "/images/partners/healthcare-workers-4-palestine.png", "url": "https://www.healthworkers4palestine.com/" },
-      { "name": "NFATs", "logo": "/images/partners/nfats.png", "url": "https://nfats1.wixsite.com/nfatscollective", "rounded": true },
-      { "name": "One State Palestine", "logo": "/images/partners/one-state-palestine.png", "url": "https://www.onestatepalestine.org/" },
-      { "name": "RBB", "logo": "/images/partners/rbb.png", "url": "https://refugeebiriyanibananas.org/" },
-      { "name": "United In Resistance", "logo": "/images/partners/united-in-resistance.png", "url": "https://unitedinresistance.co.uk/" }
-    ]
+    "collaborators": {
+      "title": "In Collaboration With",
+      "organisations": [
+        { "name": "Freedom Flotilla Coalition", "logo": "/images/partners/freedom-flotilla-coalition.png", "url": "https://freedomflotilla.org/" },
+        { "name": "Global Sumud Flotilla", "logo": "/images/partners/gsf.png", "url": "https://global-sumudflotilla.com/" },
+        { "name": "Gaza Sunbirds", "logo": "/images/partners/gaza-sunbirds.png", "url": "https://gazasunbirds.org/" },
+        { "name": "Let's Talk", "logo": "/images/partners/lets-talk.svg", "url": "https://letstalkpalestine.com/" },
+        { "name": "Eko", "logo": "/images/partners/Eko_Logo_Black.svg", "url": "https://www.eko.org/" },
+        { "name": "Friends of Al-Aqsa", "logo": "/images/partners/friends-of-al-aqsa.png", "url": "https://www.foa.org.uk/", "darkBg": true }
+      ]
+    },
+    "supporters": {
+      "title": "Supported By",
+      "organisations": [
+        { "name": "Activist Independent Movement", "logo": "/images/partners/activist-independent-movement.png", "url": "https://www.instagram.com/activist.independent.movement/" },
+        { "name": "Camden Friends of Palestine", "logo": "/images/partners/camden-friends-of-palestine.png", "url": "https://linktr.ee/cfop" },
+        { "name": "Gaza Genocide Emergency Committee", "logo": "/images/partners/ggec.png", "url": "https://ggec.org.uk/" },
+        { "name": "HealthCare Workers 4 Palestine", "logo": "/images/partners/healthcare-workers-4-palestine.png", "url": "https://www.healthworkers4palestine.com/" },
+        { "name": "NFATs", "logo": "/images/partners/nfats.png", "url": "https://nfats1.wixsite.com/nfatscollective", "rounded": true },
+        { "name": "One State Palestine", "logo": "/images/partners/one-state-palestine.png", "url": "https://www.onestatepalestine.org/" },
+        { "name": "RBB", "logo": "/images/partners/rbb.png", "url": "https://refugeebiriyanibananas.org/" },
+        { "name": "United In Resistance", "logo": "/images/partners/united-in-resistance.png", "url": "https://unitedinresistance.co.uk/" }
+      ]
+    }
   },
   "hero": {
     "backgroundImage": {
@@ -350,6 +365,12 @@
         "label": "Join the UK Delegation",
         "href": "https://cryptpad.fr/form/#/2/form/view/QYfOjHYWJnKMP6FvG2ghlcNLH2MDB8UUrgz0yKRiuhQ/",
         "icon": "Users",
+        "style": "outline"
+      },
+      {
+        "label": "Watch the Documentary",
+        "href": "https://www.youtube.com/watch?v=hiavQ-zZo6M",
+        "icon": "Play",
         "style": "outline"
       }
     ]

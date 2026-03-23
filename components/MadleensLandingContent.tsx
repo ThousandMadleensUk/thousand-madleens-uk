@@ -30,6 +30,7 @@ import {
   AlertTriangle,
   Clipboard,
   Check,
+  Play,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -53,6 +54,7 @@ const iconMap = {
   MessageSquare,
   AlertTriangle,
   Clipboard,
+  Play,
   RiTiktokLine,
   RiTelegram2Line,
     RiMailLine,
@@ -86,6 +88,7 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
               <a
                 key={item.href}
                 href={item.href}
+                {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className="text-gray-700 font-bold hover:text-green-600 transition-colors"
               >
                 {item.label}
@@ -343,29 +346,56 @@ export default function MadleensLandingContent({ content }: MadleensLandingConte
       {content.partners && (
         <section className="py-12 sm:py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <motion.div
-              className="max-w-5xl mx-auto"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <p className="text-sm sm:text-base text-gray-500 uppercase tracking-widest text-center mb-8 sm:mb-10">
-                {content.partners.title}
-              </p>
-              <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-10 sm:gap-x-14 sm:gap-y-12">
-                {content.partners.organisations.map((org: any, index: number) => (
-                  <motion.a key={index} href={org.url} target="_blank" rel="noopener noreferrer" className={`flex items-center justify-center ${org.darkBg ? 'bg-black rounded-lg p-2' : ''}`} whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={org.logo}
-                      alt={org.name}
-                      className={`object-contain h-14 sm:h-16 max-w-[120px] sm:max-w-[150px] ${org.rounded ? 'rounded-full border border-gray-200 p-1.5' : ''}`}
-                    />
-                  </motion.a>
-                ))}
-              </div>
-            </motion.div>
+            <div className="max-w-5xl mx-auto space-y-12 sm:space-y-16">
+              {content.partners.collaborators && (
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                >
+                  <p className="text-sm sm:text-base text-gray-500 uppercase tracking-widest text-center mb-8 sm:mb-10">
+                    {content.partners.collaborators.title}
+                  </p>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-12 justify-items-center items-center">
+                    {content.partners.collaborators.organisations.map((org: any, index: number) => (
+                      <motion.a key={index} href={org.url} target="_blank" rel="noopener noreferrer" className={`flex items-center justify-center ${org.darkBg ? 'bg-black rounded-lg p-2' : ''}`} whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={org.logo}
+                          alt={org.name}
+                          className={`object-contain h-20 sm:h-24 max-w-[160px] sm:max-w-[200px] ${org.rounded ? 'rounded-full border border-gray-200 p-1.5' : ''}`}
+                        />
+                      </motion.a>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+              {content.partners.supporters && (
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                >
+                  <p className="text-sm sm:text-base text-gray-500 uppercase tracking-widest text-center mb-8 sm:mb-10">
+                    {content.partners.supporters.title}
+                  </p>
+                  <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-8 sm:gap-x-10 sm:gap-y-10">
+                    {content.partners.supporters.organisations.map((org: any, index: number) => (
+                      <motion.a key={index} href={org.url} target="_blank" rel="noopener noreferrer" className={`flex items-center justify-center ${org.darkBg ? 'bg-black rounded-lg p-2' : ''}`} whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={org.logo}
+                          alt={org.name}
+                          className={`object-contain h-10 sm:h-12 max-w-[100px] sm:max-w-[120px] ${org.rounded ? 'rounded-full border border-gray-200 p-1.5' : ''}`}
+                        />
+                      </motion.a>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </div>
           </div>
         </section>
       )}
